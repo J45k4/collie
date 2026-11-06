@@ -1,0 +1,35 @@
+#!/bin/sh
+# Select an external Flexscript source checkout without changing it.
+set -eu
+root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+sdk=${FLEXSCRIPT_SDK:-"$root/../flexscript"}
+allow_mismatch=0
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        --sdk) [ "$#" -ge 2 ] || { echo '--sdk needs a directory' >&2; exit 2; }; sdk=$2; shift 2 ;;
+        --allow-sdk-mismatch) allow_mismatch=1; shift ;;
+        --help) echo 'Usage: ./configure [--sdk PATH] [--allow-sdk-mismatch]'; exit 0 ;;
+        *) echo "Unknown option: $1" >&2; exit 2 ;;
+    esac
+done
+sdk=$(CDPATH= cd -- "$sdk" && pwd -P)
+for file in compiler/main.flex libs/ui/syntax.flex scripts/lib/build.flex; do
+    [ -f "$sdk/$file" ] || { echo "Missing Flexscript SDK file: $sdk/$file" >&2; exit 1; }
+done
+expected=$(cat "$root/flexscript.lock")
+actual=$(git -C "$sdk" rev-parse HEAD)
+if [ "$actual" != "$expected" ] && [ "$allow_mismatch" -ne 1 ]; then
+    echo "Flexscript revision mismatch: expected $expected, found $actual." >&2
+    echo 'Select the pinned checkout, or use --allow-sdk-mismatch for SDK development.' >&2
+    exit 1
+fi
+if [ -e "$root/.flexscript" ] && [ ! -L "$root/.flexscript" ]; then
+    echo '.flexscript already exists and is not a link; refusing to replace it.' >&2; exit 1
+fi
+ln -sfn -- "$sdk" "$root/.flexscript"
+mkdir -p "$root/build"
+printf '%s\n' "$actual" > "$root/build/sdk-revision"
+if [ -n "$(git -C "$sdk" status --porcelain -- compiler vm lib libs scripts/lib)" ]; then
+    echo 'Using a modified SDK working tree; builds include its local changes.' >&2
+fi
+printf 'Flexscript SDK: %s (%s)\n' "$sdk" "$actual"

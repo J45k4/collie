@@ -1,0 +1,2226 @@
+{
+  "source_repository": "https://github.com/J45k4/flexscript",
+  "source_revision": "d98c05f3a7de693442c5ea532ce515524f9e206c",
+  "files": {
+    "apps/collie/.gitignore": {
+      "destination": ".gitignore",
+      "keep_source": false,
+      "sha256": "006080bd7e2ef89199025c303a25a6bc0989fcb7aa92a588acd876513f072871"
+    },
+    "apps/collie/README.md": {
+      "destination": "README.md",
+      "keep_source": false,
+      "sha256": "6a14e17b610412edd86ff02f06cbefea98bf60a4f02b828a44196b7fe594fda2"
+    },
+    "apps/collie/adapters/linux.flex": {
+      "destination": "adapters/linux.flex",
+      "keep_source": false,
+      "sha256": "2bbe6734a6718b5c054328098a65f49b99297fdf07dc90bf42b3632dba459fb8"
+    },
+    "apps/collie/adapters/workspace.flex": {
+      "destination": "adapters/workspace.flex",
+      "keep_source": false,
+      "sha256": "091b08ff7568306a9471bc42c41c779b07417d6d1f526e981775c5cbdad6367b"
+    },
+    "apps/collie/android/AndroidManifest.xml": {
+      "destination": "android/AndroidManifest.xml",
+      "keep_source": false,
+      "sha256": "b40f56f507d94f21af2788214a07cb908e9624e7db0ddb5ede8a1d405e21707c"
+    },
+    "apps/collie/android/CameraAttachmentProvider.java": {
+      "destination": "android/CameraAttachmentProvider.java",
+      "keep_source": false,
+      "sha256": "0721bb01d304790e8ba43ec897031f39352be87f08627be94c4bbab50ef0bd0d"
+    },
+    "apps/collie/android/CameraProfileValues.java": {
+      "destination": "android/CameraProfileValues.java",
+      "keep_source": false,
+      "sha256": "7e3035a7506c5cf9389831b196aa3470b9c92865567e7946819ede357707551e"
+    },
+    "apps/collie/android/CameraStructuredValues.java": {
+      "destination": "android/CameraStructuredValues.java",
+      "keep_source": false,
+      "sha256": "6e71053aa38ed4fae8beb373e7ba6fc4760b4b84dcc24293a9a4c75d61262ac8"
+    },
+    "apps/collie/android/CameraValues.java": {
+      "destination": "android/CameraValues.java",
+      "keep_source": false,
+      "sha256": "e9ed2a4742a1c380d232e6a4fcc67f4d0cd795b4e9a411eb0c33ed2668ae5055"
+    },
+    "apps/collie/android/CollieAccessibilityService.java": {
+      "destination": "android/CollieAccessibilityService.java",
+      "keep_source": false,
+      "sha256": "03884323d7720a72e872d2684ed34211cce71aed09b81920c8c411cb1e9a5b9b"
+    },
+    "apps/collie/android/CollieHceBackgroundPaymentService.java": {
+      "destination": "android/CollieHceBackgroundPaymentService.java",
+      "keep_source": false,
+      "sha256": "f9020c4c2b20b3c1d7017b334573b3548bdb677e8280e9e935de8205df06dd48"
+    },
+    "apps/collie/android/CollieHceBackgroundService.java": {
+      "destination": "android/CollieHceBackgroundService.java",
+      "keep_source": false,
+      "sha256": "33894962d1c5196824714872c99daf6112764f611d946703c1476049fc4274bd"
+    },
+    "apps/collie/android/CollieHceFService.java": {
+      "destination": "android/CollieHceFService.java",
+      "keep_source": false,
+      "sha256": "91b2e4946c5b80913d7e407b635f3046cbba6988d0d7a1e97416cab4350008bf"
+    },
+    "apps/collie/android/CollieHcePaymentService.java": {
+      "destination": "android/CollieHcePaymentService.java",
+      "keep_source": false,
+      "sha256": "8279420f9a7380c70ab200aefcc1490dd5c98619f5482101e29834bb2a548827"
+    },
+    "apps/collie/android/CollieHceService.java": {
+      "destination": "android/CollieHceService.java",
+      "keep_source": false,
+      "sha256": "0e45203b1e1e414729262ecce3a32dcaba2e7fba63992d06fb6c23e36a242019"
+    },
+    "apps/collie/android/CollieProjectionService.java": {
+      "destination": "android/CollieProjectionService.java",
+      "keep_source": false,
+      "sha256": "84f9ff15bf38af0acf8ad404308fa44912f1358daa4ec3fbc34927af901e1331"
+    },
+    "apps/collie/android/CollieUi.java": {
+      "destination": "android/CollieUi.java",
+      "keep_source": false,
+      "sha256": "a37def5ea6c1a5f11b94b0efc66eca3187ccc1234e95ea893f7524ae7b63cb39"
+    },
+    "apps/collie/android/CollieVpnService.java": {
+      "destination": "android/CollieVpnService.java",
+      "keep_source": false,
+      "sha256": "d01866e4857098938456f62763e745fcde099b3ab6b268ed43a80ed748b24113"
+    },
+    "apps/collie/android/HARDWARE.md": {
+      "destination": "android/HARDWARE.md",
+      "keep_source": false,
+      "sha256": "cba550f2c0710ef07777b39d793099c2fcaf1c2517e869ef5e6637eeacf615ff"
+    },
+    "apps/collie/android/HardwareAccess.java": {
+      "destination": "android/HardwareAccess.java",
+      "keep_source": false,
+      "sha256": "5f659373fc453a266b296ca03a467aafcddbaa9aea0ab207fd10a60efa107fc9"
+    },
+    "apps/collie/android/HardwareAccessibility.java": {
+      "destination": "android/HardwareAccessibility.java",
+      "keep_source": false,
+      "sha256": "2888015dbfcbe5e6c71245586cb9c56dac203eb27692b0e8fedd2e1aec3262ba"
+    },
+    "apps/collie/android/HardwareAudio.java": {
+      "destination": "android/HardwareAudio.java",
+      "keep_source": false,
+      "sha256": "4b32586bd20461b684dcdb4007d44f119c5afce13b19fb44be026c9a36f485de"
+    },
+    "apps/collie/android/HardwareAware.java": {
+      "destination": "android/HardwareAware.java",
+      "keep_source": false,
+      "sha256": "b619bc20b98231ac4fafb66bfc0e4c4561d5b77c0d4cc6e8afa1f29b54b96680"
+    },
+    "apps/collie/android/HardwareBiometrics.java": {
+      "destination": "android/HardwareBiometrics.java",
+      "keep_source": false,
+      "sha256": "6ae15356dcd754849ba8baee97767788d3addcbd827201a99b9b46872faff1d0"
+    },
+    "apps/collie/android/HardwareBle.java": {
+      "destination": "android/HardwareBle.java",
+      "keep_source": false,
+      "sha256": "bfe93c263b6e33516a4a30a9ebe64d09ac38ce8d3f7cf1abc9f00b1684f3d3be"
+    },
+    "apps/collie/android/HardwareBleSets.java": {
+      "destination": "android/HardwareBleSets.java",
+      "keep_source": false,
+      "sha256": "265fc79e23e4f99ceda2a74c058d530c098afd2734620b17044492f2f2ce520f"
+    },
+    "apps/collie/android/HardwareBluetooth.java": {
+      "destination": "android/HardwareBluetooth.java",
+      "keep_source": false,
+      "sha256": "52ccbc8e24fa53b61cb008403f17dc294b557c9a0bed65f4f686420aa35e6587"
+    },
+    "apps/collie/android/HardwareCamera.java": {
+      "destination": "android/HardwareCamera.java",
+      "keep_source": false,
+      "sha256": "a3d6b1c94bbbe9cb0206d39db8fe2fa9d65623d186fbbe26eae0a4fca508b0b7"
+    },
+    "apps/collie/android/HardwareCameraCodecs.java": {
+      "destination": "android/HardwareCameraCodecs.java",
+      "keep_source": false,
+      "sha256": "6844646bf564fcda051e91ee4d9b3899c32486e6c4a4a59dd4e5f8ffc17dac02"
+    },
+    "apps/collie/android/HardwareCameraDng.java": {
+      "destination": "android/HardwareCameraDng.java",
+      "keep_source": false,
+      "sha256": "4cff6e23b3d7eb4eb8cfeeb92dc570119aa171c4faae8e3bc9a39c40f8abb5b0"
+    },
+    "apps/collie/android/HardwareCameraEncoderProfiles.java": {
+      "destination": "android/HardwareCameraEncoderProfiles.java",
+      "keep_source": false,
+      "sha256": "22ce62bf5c9be5e82e07b421a5b338435aa4598d23b6893c9b9ccda6421cb671"
+    },
+    "apps/collie/android/HardwareCameraOutput.java": {
+      "destination": "android/HardwareCameraOutput.java",
+      "keep_source": false,
+      "sha256": "b9576993cc38a6fab1b2b89d49a25a0dd170a7b4ddf718c06830ffd5164088c0"
+    },
+    "apps/collie/android/HardwareCameraPhysical.java": {
+      "destination": "android/HardwareCameraPhysical.java",
+      "keep_source": false,
+      "sha256": "a78f151d3ae2291b46d1bbf9da0e273bbd35eb2d5abf0f198e357636b4fa0a96"
+    },
+    "apps/collie/android/HardwareCameraRates.java": {
+      "destination": "android/HardwareCameraRates.java",
+      "keep_source": false,
+      "sha256": "c60fe38b334b8be258666586630eba50c4599adca6fcf24e6b9ac173701cb7d4"
+    },
+    "apps/collie/android/HardwareCameraTorch.java": {
+      "destination": "android/HardwareCameraTorch.java",
+      "keep_source": false,
+      "sha256": "edc32c3afc2a44c40e94c923a71e3c39629a7cee18e2d466dc35195758e4be4b"
+    },
+    "apps/collie/android/HardwareCameraVideo.java": {
+      "destination": "android/HardwareCameraVideo.java",
+      "keep_source": false,
+      "sha256": "578dbe678b02600ed4cb38bacedb742dec5bd0de0fe7a1bb88c8a95b15c2752e"
+    },
+    "apps/collie/android/HardwareCellular.java": {
+      "destination": "android/HardwareCellular.java",
+      "keep_source": false,
+      "sha256": "2f867cff8a11403674a231e11a82b166c3f1a709c554ecdf389eb50616d230c4"
+    },
+    "apps/collie/android/HardwareConsent.java": {
+      "destination": "android/HardwareConsent.java",
+      "keep_source": false,
+      "sha256": "5b5a1478db2a9302f4f549147b5aa1aa3eaed269b98a5df8fc5137d8662ad30c"
+    },
+    "apps/collie/android/HardwareDocuments.java": {
+      "destination": "android/HardwareDocuments.java",
+      "keep_source": false,
+      "sha256": "d652fdb6e123927693537d38193215ea5ece48c9a04c8081702466d1b0b78682"
+    },
+    "apps/collie/android/HardwareGattClient.java": {
+      "destination": "android/HardwareGattClient.java",
+      "keep_source": false,
+      "sha256": "03c8a9cd63722d4731e218154edd9aa657df49e6848d7cc3b9c852909bf52709"
+    },
+    "apps/collie/android/HardwareGattServer.java": {
+      "destination": "android/HardwareGattServer.java",
+      "keep_source": false,
+      "sha256": "6c6d3285ce22abe25f94e022475e466383940adf5f8c0424c9c10cccf84cbda7"
+    },
+    "apps/collie/android/HardwareHapticDevices.java": {
+      "destination": "android/HardwareHapticDevices.java",
+      "keep_source": false,
+      "sha256": "50e4ad5f078ee18e31b3479cb11ecdfe13849c770bf9904f06cc928a2bb63433"
+    },
+    "apps/collie/android/HardwareHapticEnvelope.java": {
+      "destination": "android/HardwareHapticEnvelope.java",
+      "keep_source": false,
+      "sha256": "2bca2542d2d40e07b979e14df3ff1887805700beeb6ed22305fe66501bcbf7c4"
+    },
+    "apps/collie/android/HardwareHaptics.java": {
+      "destination": "android/HardwareHaptics.java",
+      "keep_source": false,
+      "sha256": "3bb94cd1431c1676ea3676a7bd1fae34b99cb69e40d544ea245379fad2767a96"
+    },
+    "apps/collie/android/HardwareHce.java": {
+      "destination": "android/HardwareHce.java",
+      "keep_source": false,
+      "sha256": "be17a3254508d452be8316461045e34843fefb011bdef76a450de40223da9f78"
+    },
+    "apps/collie/android/HardwareHceBackground.java": {
+      "destination": "android/HardwareHceBackground.java",
+      "keep_source": false,
+      "sha256": "14c4c48168559d3f57089c3cac60c64ea9a09e68cb37aab5aee9805d005b6f12"
+    },
+    "apps/collie/android/HardwareHceControls.java": {
+      "destination": "android/HardwareHceControls.java",
+      "keep_source": false,
+      "sha256": "b1d3566039e5c440a1893e5506f92bc4ab18fa8a11b233f7ff25f891ae2bccee"
+    },
+    "apps/collie/android/HardwareHcePolling.java": {
+      "destination": "android/HardwareHcePolling.java",
+      "keep_source": false,
+      "sha256": "9440fa532499c6758955a810ed0975987c568d0ccb68cf40ea0c2b90c3bd9525"
+    },
+    "apps/collie/android/HardwareHid.java": {
+      "destination": "android/HardwareHid.java",
+      "keep_source": false,
+      "sha256": "aea31c397a8b2cfcd85b6224df6a453779d4c907681bad0430175a1b6352cbd6"
+    },
+    "apps/collie/android/HardwareInput.java": {
+      "destination": "android/HardwareInput.java",
+      "keep_source": false,
+      "sha256": "daa90cc6594d7412f900bb24ff029445e24dff343eb1b15de75bf3131b025f38"
+    },
+    "apps/collie/android/HardwareKeystore.java": {
+      "destination": "android/HardwareKeystore.java",
+      "keep_source": false,
+      "sha256": "686d5910534bffdb40a4e4a271568395125f1ebe6a8302caa479c97ebd2ee001"
+    },
+    "apps/collie/android/HardwareLocation.java": {
+      "destination": "android/HardwareLocation.java",
+      "keep_source": false,
+      "sha256": "dd8e07cbed4951eddc71ccfdcea2997c306c76b178e1add0cc96f59624f3c521"
+    },
+    "apps/collie/android/HardwareMidi.java": {
+      "destination": "android/HardwareMidi.java",
+      "keep_source": false,
+      "sha256": "17e6e04882f600b2fc2826a095bd865d7c3c54c84f2e39d964d42ee67440748f"
+    },
+    "apps/collie/android/HardwareNetwork.java": {
+      "destination": "android/HardwareNetwork.java",
+      "keep_source": false,
+      "sha256": "31f9ff8e4e4ba17f677e119154a65ef981810b1bd4a11a5e10018746341494d3"
+    },
+    "apps/collie/android/HardwareNfc.java": {
+      "destination": "android/HardwareNfc.java",
+      "keep_source": false,
+      "sha256": "d5c8820ebe862ede0693775add06193c84aa6c9b424e5a078c45470cb11e2902"
+    },
+    "apps/collie/android/HardwareNsd.java": {
+      "destination": "android/HardwareNsd.java",
+      "keep_source": false,
+      "sha256": "763d9a3dc66182b496486108336c7f324bab66f7ed3a29a4cdfa5e49c541655b"
+    },
+    "apps/collie/android/HardwareP2p.java": {
+      "destination": "android/HardwareP2p.java",
+      "keep_source": false,
+      "sha256": "617e717ab8d8927607ad9c67ae1103f4635a4c392dad78c8bbc52d4f54a8ddf0"
+    },
+    "apps/collie/android/HardwareRtt.java": {
+      "destination": "android/HardwareRtt.java",
+      "keep_source": false,
+      "sha256": "0c1c07d1e30877f2872c03a0d9a9775cb50697127bbb91ecdc51bc430c08c7c2"
+    },
+    "apps/collie/android/HardwareScreenCapture.java": {
+      "destination": "android/HardwareScreenCapture.java",
+      "keep_source": false,
+      "sha256": "0ae35bf9a2c483af42220bf0ddbfe32c7cb516bc006b538293b1370e63ac4729"
+    },
+    "apps/collie/android/HardwareScreenVideo.java": {
+      "destination": "android/HardwareScreenVideo.java",
+      "keep_source": false,
+      "sha256": "0946d302774a51f5b3af6fc2d9425884da081cf6ba2b85866e0083f07cea17ec"
+    },
+    "apps/collie/android/HardwareSecureElement.java": {
+      "destination": "android/HardwareSecureElement.java",
+      "keep_source": false,
+      "sha256": "7017e5f573f73949df5cbb1d9f4ebb9a17e9771a8aed9cbaed3dd3ef8f1a27d4"
+    },
+    "apps/collie/android/HardwareSensorDirect.java": {
+      "destination": "android/HardwareSensorDirect.java",
+      "keep_source": false,
+      "sha256": "2c8fb7444efda7d81a9baa87f572c75bf539fe1b5f51d3fcf61e809a2e7232a5"
+    },
+    "apps/collie/android/HardwareSensors.java": {
+      "destination": "android/HardwareSensors.java",
+      "keep_source": false,
+      "sha256": "92e0d40e59a0d86c43ad91a09911c6e53562f526f98baf379d4aed2de4a3809b"
+    },
+    "apps/collie/android/HardwareStatus.java": {
+      "destination": "android/HardwareStatus.java",
+      "keep_source": false,
+      "sha256": "c4f1cbef2fab1a6a29943449003a1859b5340a93f58e60c848916057a8001578"
+    },
+    "apps/collie/android/HardwareUsb.java": {
+      "destination": "android/HardwareUsb.java",
+      "keep_source": false,
+      "sha256": "25e230fc3fa2f26c1a507831b2507bbe97986cbeda500d0825a6d9f97aee996c"
+    },
+    "apps/collie/android/HardwareUsbIso.java": {
+      "destination": "android/HardwareUsbIso.java",
+      "keep_source": false,
+      "sha256": "8bc9f4299eb5cf7c523029549139428d0db1ea698312d08ea7be9c11c53cf943"
+    },
+    "apps/collie/android/HardwareUwb.java": {
+      "destination": "android/HardwareUwb.java",
+      "keep_source": false,
+      "sha256": "18cffb581113c5bf1b1fa70da8ed744648e619cf184358fede4321971cf9af75"
+    },
+    "apps/collie/android/HardwareUwbAosp.java": {
+      "destination": "android/HardwareUwbAosp.java",
+      "keep_source": false,
+      "sha256": "2dd5bb5a64dacf43624a3d386972bb42d3cf0f1d66e5852dbc29c6bc6285ab30"
+    },
+    "apps/collie/android/HardwareUwbGms.java": {
+      "destination": "android/HardwareUwbGms.java",
+      "keep_source": false,
+      "sha256": "44a9376eea153d3523452aad72f7e49375e8defc65631aeb78f62f726f1845c6"
+    },
+    "apps/collie/android/HardwareVpn.java": {
+      "destination": "android/HardwareVpn.java",
+      "keep_source": false,
+      "sha256": "4d5a8c8f97273a450fd6db45c888dbf349193ed125a3eb707b2372858d8aa9dc"
+    },
+    "apps/collie/android/HardwareWifi.java": {
+      "destination": "android/HardwareWifi.java",
+      "keep_source": false,
+      "sha256": "3bf648cc91acbd6203e50bdbd953a4b1d3f9830c34c8e9e32ecc68520bee712b"
+    },
+    "apps/collie/android/MainActivity.java": {
+      "destination": "android/MainActivity.java",
+      "keep_source": false,
+      "sha256": "5cf35d52bb244d4b8ce99c68faa317f24c38e554411268b60b3e590b011b5932"
+    },
+    "apps/collie/android/PermissionPrompts.java": {
+      "destination": "android/PermissionPrompts.java",
+      "keep_source": false,
+      "sha256": "4e4e140c58a4cba1c7bcd139565d38c660140e9ba0f383e60be3185c3d7b28b2"
+    },
+    "apps/collie/android/PlatformTask.java": {
+      "destination": "android/PlatformTask.java",
+      "keep_source": false,
+      "sha256": "02dd7ef8c9c39e76c7efe8c0eab3360d66c85ae273d6deae0f8977612c3ec3a0"
+    },
+    "apps/collie/android/README.md": {
+      "destination": "android/README.md",
+      "keep_source": false,
+      "sha256": "4f19cbefced29d1ad70d3b557ff970453583f7bc4a5014db0cbe643e1b4a1b01"
+    },
+    "apps/collie/android/UiRenderer.java": {
+      "destination": "android/UiRenderer.java",
+      "keep_source": false,
+      "sha256": "bb04975febb7129872dfdb15c65bf545c92fc49d577928dcef08c0ee8519fd20"
+    },
+    "apps/collie/android/UiRichText.java": {
+      "destination": "android/UiRichText.java",
+      "keep_source": false,
+      "sha256": "33ce49945978e1599dae8fdf5b93674dfe60d6971df05dd089a913a119d9836b"
+    },
+    "apps/collie/android/UiZoomImage.java": {
+      "destination": "android/UiZoomImage.java",
+      "keep_source": false,
+      "sha256": "01dc5e45beb7769bfcc402083dbfba26bc6cc579ff044dbd354a09e20e390097"
+    },
+    "apps/collie/android/UsbConsentReceiver.java": {
+      "destination": "android/UsbConsentReceiver.java",
+      "keep_source": false,
+      "sha256": "28bb364b018206fbccbb59a16e90418200b1b0166304f9dae6879bead637ee00"
+    },
+    "apps/collie/android/VmHardware.java": {
+      "destination": "android/VmHardware.java",
+      "keep_source": false,
+      "sha256": "4237b33563b5310ba802173a851c7482c0c5e3b50ac65562a5e6af583f25a3ad"
+    },
+    "apps/collie/android/VmInternet.java": {
+      "destination": "android/VmInternet.java",
+      "keep_source": false,
+      "sha256": "9540fec0f883c2eafc623aaa08cf5e025c26c8fd8f00893c243db684c3365211"
+    },
+    "apps/collie/android/VmViews.java": {
+      "destination": "android/VmViews.java",
+      "keep_source": false,
+      "sha256": "f65372d18d3a3bb505302a9650c65f75514249359753bca06a95f2bf92a85265"
+    },
+    "apps/collie/android/WorkerManager.java": {
+      "destination": "android/WorkerManager.java",
+      "keep_source": false,
+      "sha256": "6d5424f3ff6440a1007f5e35b722425cbf5206af9953893ac341dacdd1cf7fe5"
+    },
+    "apps/collie/android/artwork/README.md": {
+      "destination": "android/artwork/README.md",
+      "keep_source": false,
+      "sha256": "edc997751d4d57d5fcee77db2649ccd6ab31813ac1791c2ebfb99535e6c23352"
+    },
+    "apps/collie/android/build.flex": {
+      "destination": "android/build.flex",
+      "keep_source": false,
+      "sha256": "ec609414257057417371d6122ac4d57097c4a74c585e585303bb489509be36cf"
+    },
+    "apps/collie/android/dependencies.flex": {
+      "destination": "android/dependencies.flex",
+      "keep_source": false,
+      "sha256": "942718f4435b9b9f6ae4bbc818dc80a916c75ca973724dd454885fdc2d9b9612"
+    },
+    "apps/collie/android/dependencies.json": {
+      "destination": "android/dependencies.json",
+      "keep_source": false,
+      "sha256": "4e92b1200be896fa19a777fabadb1ae564c5f958be2217ab9551c055eed10169"
+    },
+    "apps/collie/android/engine.flex": {
+      "destination": "android/engine.flex",
+      "keep_source": false,
+      "sha256": "d6dd9ccffd9cfc62d5d4974c1490fdac56586012c02b9bb0ac28347a84f57f38"
+    },
+    "apps/collie/android/guest-files.flex": {
+      "destination": "android/guest-files.flex",
+      "keep_source": false,
+      "sha256": "1b62c54240bbc9a4866f4a6df3f6a878618481a8d18b0e622d57e24b857b0f99"
+    },
+    "apps/collie/android/hardware-buffer.c": {
+      "destination": "android/hardware-buffer.c",
+      "keep_source": false,
+      "sha256": "0d5177c52238683f2843973049ee651996a1956edb2d0a94f341ea6d17bf8d3b"
+    },
+    "apps/collie/android/host.c": {
+      "destination": "android/host.c",
+      "keep_source": false,
+      "sha256": "01c25d7a63ce0759f0978a73d6a893874def13ef90952e2379ae449a19257c9d"
+    },
+    "apps/collie/android/native-test.c": {
+      "destination": "android/native-test.c",
+      "keep_source": false,
+      "sha256": "0a3844be551cff00807a51180b315ed05ea72afeeadc9f4a352732631855c195"
+    },
+    "apps/collie/android/res/drawable-nodpi/collie_border_collie.png": {
+      "destination": "android/res/drawable-nodpi/collie_border_collie.png",
+      "keep_source": false,
+      "sha256": "120aac901f23ecf167651d82487936429d0fa80807d7f51a2e72bb7121e05603"
+    },
+    "apps/collie/android/res/drawable/collie_mark.xml": {
+      "destination": "android/res/drawable/collie_mark.xml",
+      "keep_source": false,
+      "sha256": "56fcf401e6a84e11d0641601e1f34ccf2b89c9ad0ccd973e17dd4093c326cc68"
+    },
+    "apps/collie/android/res/drawable/collie_monochrome.xml": {
+      "destination": "android/res/drawable/collie_monochrome.xml",
+      "keep_source": false,
+      "sha256": "7beb8309dcfe0ad74928f23060eaa39cd4867ba9063c8f51a6cf7229722fb53e"
+    },
+    "apps/collie/android/res/mipmap-anydpi-v26/ic_launcher.xml": {
+      "destination": "android/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "keep_source": false,
+      "sha256": "20d4853dad4829b138e0eb9dac37eeee01e5fa1fdd970d095b24c397b30a3cde"
+    },
+    "apps/collie/android/res/mipmap-anydpi-v33/ic_launcher.xml": {
+      "destination": "android/res/mipmap-anydpi-v33/ic_launcher.xml",
+      "keep_source": false,
+      "sha256": "989775847d82914612154c4a03a37d4a07af3d535677e1e2d3f918a1afdb6aae"
+    },
+    "apps/collie/android/res/values/accessibility.xml": {
+      "destination": "android/res/values/accessibility.xml",
+      "keep_source": false,
+      "sha256": "c0865296fe6c7143d66c2fb8c634adca73720bd5420d98e3d8bf34fbad44ce25"
+    },
+    "apps/collie/android/res/values/hce.xml": {
+      "destination": "android/res/values/hce.xml",
+      "keep_source": false,
+      "sha256": "9662e59a3b4749c80c6521fa0325e5723e3b9fb62a571a6d4162e3343804cdf6"
+    },
+    "apps/collie/android/res/values/theme.xml": {
+      "destination": "android/res/values/theme.xml",
+      "keep_source": false,
+      "sha256": "84747204f66273e76497202e3d926afdffd4eb7347399186b66946dacf7f9ee8"
+    },
+    "apps/collie/android/res/xml/accessibility.xml": {
+      "destination": "android/res/xml/accessibility.xml",
+      "keep_source": false,
+      "sha256": "b8ad6bcca6ac9b1e7e5340601df4969cf0b1eceaa253df115683eb72c4198c83"
+    },
+    "apps/collie/android/res/xml/hce_f.xml": {
+      "destination": "android/res/xml/hce_f.xml",
+      "keep_source": false,
+      "sha256": "2052c437b856e91527d404e71d85dfc8984d56be13b095101975901ef2ba9c1e"
+    },
+    "apps/collie/android/res/xml/hce_other.xml": {
+      "destination": "android/res/xml/hce_other.xml",
+      "keep_source": false,
+      "sha256": "8dc96cab3a141e9c1df66aa0df2ff0c1779b2722db0fdc9c19285013c581a2ae"
+    },
+    "apps/collie/android/res/xml/hce_payment.xml": {
+      "destination": "android/res/xml/hce_payment.xml",
+      "keep_source": false,
+      "sha256": "9ab8a1487b7373032eb48f219a526dd59e900a57adb72e4cf7a4cd31e8d52944"
+    },
+    "apps/collie/android/ui-host.c": {
+      "destination": "android/ui-host.c",
+      "keep_source": false,
+      "sha256": "b784d4257770741faf5d3808b65cfd00fe1016a06790af7cec7d06489aa9c9b9"
+    },
+    "apps/collie/android/usb-iso.c": {
+      "destination": "android/usb-iso.c",
+      "keep_source": false,
+      "sha256": "5d1293bd8c6f95278de6824d66bc277d5cfc8f64a673428f1e403ba4fcd888f7"
+    },
+    "apps/collie/core/agents.flex": {
+      "destination": "core/agents.flex",
+      "keep_source": false,
+      "sha256": "e2004e1fa26748ade795dff46d9f5a03b7cc848a82ba0762c40f2651e9b0fc56"
+    },
+    "apps/collie/core/autoreview.flex": {
+      "destination": "core/autoreview.flex",
+      "keep_source": false,
+      "sha256": "cecd246a067c88e29b6f8618c6c922e66190efbf85870aaa30227aa42746f4e1"
+    },
+    "apps/collie/core/card-handler.flex": {
+      "destination": "core/card-handler.flex",
+      "keep_source": false,
+      "sha256": "af4d820b0f9b9a6993ba4b9b7f59f6eaee54495797cb874863d953fa433bd31f"
+    },
+    "apps/collie/core/checkpoint.flex": {
+      "destination": "core/checkpoint.flex",
+      "keep_source": false,
+      "sha256": "9441caef34ef4e5bcadc8be991b27645d24466b9d1f146b5e015963bf4a48d11"
+    },
+    "apps/collie/core/cli.flex": {
+      "destination": "core/cli.flex",
+      "keep_source": false,
+      "sha256": "912d7a37a9f7d72271ac062a81a6603c910e3fe7a6c81138427565d3783c2d24"
+    },
+    "apps/collie/core/events.flex": {
+      "destination": "core/events.flex",
+      "keep_source": false,
+      "sha256": "eddcea5217a69cd20787b1994b8f0aa41403204355aa803cdf9f5885becdbf91"
+    },
+    "apps/collie/core/hardware.flex": {
+      "destination": "core/hardware.flex",
+      "keep_source": false,
+      "sha256": "c5870af32c75f1d24c880c40e865ddd8e72c6d44519201b2ad0a61cc196e3d47"
+    },
+    "apps/collie/core/loop.flex": {
+      "destination": "core/loop.flex",
+      "keep_source": false,
+      "sha256": "e44dc989a88dc5c80f11cdd3621dde9c1953f8bbfb39675c9111769c6cbd1a80"
+    },
+    "apps/collie/core/permissions.flex": {
+      "destination": "core/permissions.flex",
+      "keep_source": false,
+      "sha256": "a73417449e8ef0fe956ed4d53f56090e190b2ae81745b60b6cabcde682241344"
+    },
+    "apps/collie/core/protocol.flex": {
+      "destination": "core/protocol.flex",
+      "keep_source": false,
+      "sha256": "0c90052292c0377080f1fca897804c6850b29758e37ed68abd4bdc812b430e7c"
+    },
+    "apps/collie/core/recall.flex": {
+      "destination": "core/recall.flex",
+      "keep_source": false,
+      "sha256": "0ec54b68442ec52a5ace08f2adfc445cd9817670d2ba2c9e313a7a326bc65859"
+    },
+    "apps/collie/core/scheduler.flex": {
+      "destination": "core/scheduler.flex",
+      "keep_source": false,
+      "sha256": "f99ecc9266875a7d0a07befa0fc70ac3f1acb5636845a9fe6bfabd329ccc5a35"
+    },
+    "apps/collie/core/session.flex": {
+      "destination": "core/session.flex",
+      "keep_source": false,
+      "sha256": "53ea70284ba484a972f5c7b518a8016f87988a99a336c066da79b89158903724"
+    },
+    "apps/collie/core/signals.flex": {
+      "destination": "core/signals.flex",
+      "keep_source": false,
+      "sha256": "78fa0bfb992d560fe450a9d052cbc0d66b71180dd41f86b2f26513b90d692bed"
+    },
+    "apps/collie/core/tui.flex": {
+      "destination": "core/tui.flex",
+      "keep_source": false,
+      "sha256": "4031a78415ebc6fe2b6564119b220f2167f5a817941aa1dbdc7e0d055b3cecc0"
+    },
+    "apps/collie/desktop/README.md": {
+      "destination": "desktop/README.md",
+      "keep_source": false,
+      "sha256": "eaf769482a41de8054fd04e2255aa5d879849e23988a905d738a683ff90fe5eb"
+    },
+    "apps/collie/desktop/broker-prefix.c": {
+      "destination": "desktop/broker-prefix.c",
+      "keep_source": false,
+      "sha256": "80c751ea9712536941247619519733c064542a13cc9d2f0f05198b3e21c04f3b"
+    },
+    "apps/collie/desktop/build.flex": {
+      "destination": "desktop/build.flex",
+      "keep_source": false,
+      "sha256": "022bc20d8870ee6804c68007126b0d0a68f7fcd71b0d582bf0e9be47ca9b9426"
+    },
+    "apps/collie/desktop/chats-native.flex": {
+      "destination": "desktop/chats-native.flex",
+      "keep_source": false,
+      "sha256": "e7958ccbfce5ab595d722af29251d838d524ca75ff946bd1f4b70fe0baa977ad"
+    },
+    "apps/collie/desktop/engine-main.flex": {
+      "destination": "desktop/engine-main.flex",
+      "keep_source": false,
+      "sha256": "92cad6359b2eac97ffee58e736ae4f83baa5c553f2f46278736be1eef767e1db"
+    },
+    "apps/collie/desktop/hardware-api.txt": {
+      "destination": "desktop/hardware-api.txt",
+      "keep_source": false,
+      "sha256": "83e116d68247a4ff5e2702b79f28eee945bda065e9b48c07a4b745668cb4c72a"
+    },
+    "apps/collie/desktop/host/accounts.flex": {
+      "destination": "desktop/host/accounts.flex",
+      "keep_source": false,
+      "sha256": "9dd5fac654b2ff367fdf38218fc737647498aae62f76476e4adae38d28b4547b"
+    },
+    "apps/collie/desktop/host/chats.flex": {
+      "destination": "desktop/host/chats.flex",
+      "keep_source": false,
+      "sha256": "3154b175829a2cc9d71d786fff5f43a65ef20a5d8997fc6a4431081c60781685"
+    },
+    "apps/collie/desktop/host/command-queue.flex": {
+      "destination": "desktop/host/command-queue.flex",
+      "keep_source": false,
+      "sha256": "a157d630c7e16e1ed012adecc360f21539e9aa9966e066569cea13685d5822fd"
+    },
+    "apps/collie/desktop/host/commands.flex": {
+      "destination": "desktop/host/commands.flex",
+      "keep_source": false,
+      "sha256": "1ac11e6b65afbd09074f248dd81fb3135d3b36d1a67fc66d1b370907ef67db95"
+    },
+    "apps/collie/desktop/host/controller.flex": {
+      "destination": "desktop/host/controller.flex",
+      "keep_source": false,
+      "sha256": "83abb630d3f1e6f4cfaf6eb5a03017576581070a44ae8ec02d3eda5abba0d74d"
+    },
+    "apps/collie/desktop/host/engine.flex": {
+      "destination": "desktop/host/engine.flex",
+      "keep_source": false,
+      "sha256": "d651a54dba4a4ac55cc91d950a1917f9aadc04fadfc25d31009fcde4ac7784be"
+    },
+    "apps/collie/desktop/host/imagegen.flex": {
+      "destination": "desktop/host/imagegen.flex",
+      "keep_source": false,
+      "sha256": "13a55d5772730f9fe94d94735b88567bcbbaa1f7ced70f363a95c4726ad896c0"
+    },
+    "apps/collie/desktop/host/images.flex": {
+      "destination": "desktop/host/images.flex",
+      "keep_source": false,
+      "sha256": "b83d7ccf85c882a654c8918311597dff670cfcc0c4b358751dcec3e86075cee2"
+    },
+    "apps/collie/desktop/host/json.flex": {
+      "destination": "desktop/host/json.flex",
+      "keep_source": false,
+      "sha256": "146c3a06293e85aeddc700a97f5d5a16c16363181ba5dfbcab4dd608697191b4"
+    },
+    "apps/collie/desktop/host/login.flex": {
+      "destination": "desktop/host/login.flex",
+      "keep_source": false,
+      "sha256": "0b542c4f74288d099c5078d49ae49a4b739e5289ea103d4e58f000d1d9d70408"
+    },
+    "apps/collie/desktop/host/network.flex": {
+      "destination": "desktop/host/network.flex",
+      "keep_source": false,
+      "sha256": "b9d70e0654183017b122e5f74d2b211f4fc547f43346e730796088929a215c04"
+    },
+    "apps/collie/desktop/host/platform.flex": {
+      "destination": "desktop/host/platform.flex",
+      "keep_source": false,
+      "sha256": "0709febedfa9c2f9ad00e99f89756bc2feb4ee331501cf2884ae078c52f87888"
+    },
+    "apps/collie/desktop/host/system.flex": {
+      "destination": "desktop/host/system.flex",
+      "keep_source": false,
+      "sha256": "4051c62f6941e6c04ae95f5b7e3aa25a81e00e164ed790a88a146bc228f2645d"
+    },
+    "apps/collie/desktop/host/tasks.flex": {
+      "destination": "desktop/host/tasks.flex",
+      "keep_source": false,
+      "sha256": "bea0e236a1231421a419f4c94a4727091f6ff0a8676ee41949b46fa4b4584bfe"
+    },
+    "apps/collie/desktop/host/terminal.flex": {
+      "destination": "desktop/host/terminal.flex",
+      "keep_source": false,
+      "sha256": "3f4566c516c95fa96e7750a614ea83ea08d09c43d999c3720a26a650f64f068b"
+    },
+    "apps/collie/desktop/host/workspace.flex": {
+      "destination": "desktop/host/workspace.flex",
+      "keep_source": false,
+      "sha256": "45259ce22733326822591292e88a3657426bf8e4c152b8172c5c087d21721994"
+    },
+    "apps/collie/desktop/icons.flex": {
+      "destination": "desktop/icons.flex",
+      "keep_source": false,
+      "sha256": "31998cb7dc651f0e37be38dbdba313ee3041d17ba34b021ac741b41168350c5a"
+    },
+    "apps/collie/desktop/icons/new-chat.svg": {
+      "destination": "desktop/icons/new-chat.svg",
+      "keep_source": false,
+      "sha256": "694f30d0853bc4e7c2b9bb9750f3b1c89b58608210191747c786148f836d50f1"
+    },
+    "apps/collie/desktop/icons/new-project.svg": {
+      "destination": "desktop/icons/new-project.svg",
+      "keep_source": false,
+      "sha256": "18761c7782d27d4c9fbfd5dc05168c35135b2daf722afe476957141cf30efefa"
+    },
+    "apps/collie/desktop/icons/settings.svg": {
+      "destination": "desktop/icons/settings.svg",
+      "keep_source": false,
+      "sha256": "92d4d216120b271ae3b4ade6c336121384793428481d600be15fe697a59a2ab3"
+    },
+    "apps/collie/desktop/launch.flex": {
+      "destination": "desktop/launch.flex",
+      "keep_source": false,
+      "sha256": "1a98a3f21442fbdaca829feddcdc1958b26e2f1d624789e910f41b7fedd73ed3"
+    },
+    "apps/collie/desktop/main.flex": {
+      "destination": "desktop/main.flex",
+      "keep_source": false,
+      "sha256": "7cc055e1638008e13755ea0e2efaa83345cc46ce998a94306e30ab56eaf7ec0b"
+    },
+    "apps/collie/desktop/platform-bridge.c": {
+      "destination": "desktop/platform-bridge.c",
+      "keep_source": false,
+      "sha256": "d21884e9fb546d7c3e8e80251aea090ac3caa8c7408da6f2de8ac4cf169969fa"
+    },
+    "apps/collie/desktop/probe.flex": {
+      "destination": "desktop/probe.flex",
+      "keep_source": false,
+      "sha256": "172f2f76c754121aa92b753a4f5e7143008d88df4e72ee5b177417dba348d667"
+    },
+    "apps/collie/desktop/service.flex": {
+      "destination": "desktop/service.flex",
+      "keep_source": false,
+      "sha256": "69f6fc554b87d7d906e9f76e2ddc8d952e2ce359996d965460d5f5ab5935ff37"
+    },
+    "apps/collie/desktop/source.flex": {
+      "destination": "desktop/source.flex",
+      "keep_source": false,
+      "sha256": "708223a2a0ecd6ba843049cb1375271d9fd51aef7054bce045cec61ee48722e4"
+    },
+    "apps/collie/desktop/ui-host.flex": {
+      "destination": "desktop/ui-host.flex",
+      "keep_source": false,
+      "sha256": "6b706eee8aa355a963fde4cfa4a1f6157d4157dc582fc97ece9c4a0e1da73b46"
+    },
+    "apps/collie/desktop/wait.flex": {
+      "destination": "desktop/wait.flex",
+      "keep_source": false,
+      "sha256": "73387d534e5cc7432b1038e9a90e4bf5b5e691f459ed8468d0c418f65d46df94"
+    },
+    "apps/collie/desktop/workspace-native.flex": {
+      "destination": "desktop/workspace-native.flex",
+      "keep_source": false,
+      "sha256": "8a678b13c777ab4086bba8fcf3581141819deea061966998dd90c560260fa849"
+    },
+    "apps/collie/guest/README.md": {
+      "destination": "guest/README.md",
+      "keep_source": false,
+      "sha256": "4649a8cc28c25693c2ac55b02f62b84d83c2977db3ad2db57ccac660cd264d3a"
+    },
+    "apps/collie/guest/accessibility.flex": {
+      "destination": "guest/accessibility.flex",
+      "keep_source": false,
+      "sha256": "769a218f92f0f4e4780ca061f54ab67c619b47e98459b87f3bfd9042de0a2a51"
+    },
+    "apps/collie/guest/ble.flex": {
+      "destination": "guest/ble.flex",
+      "keep_source": false,
+      "sha256": "c9370a18a6875ba57f6075c280da2d2cb385da62256df4973058e7219da32083"
+    },
+    "apps/collie/guest/camera.flex": {
+      "destination": "guest/camera.flex",
+      "keep_source": false,
+      "sha256": "cd8f27f514cf5605b515b980a96f8d8ff87105b0fb11a43343e1e4846efb4e02"
+    },
+    "apps/collie/guest/card-handler.flex": {
+      "destination": "guest/card-handler.flex",
+      "keep_source": false,
+      "sha256": "36e5500769d40ef9beafaa998ce795a2fc68832f006ab4b06c798eac5e045d7a"
+    },
+    "apps/collie/guest/haptics.flex": {
+      "destination": "guest/haptics.flex",
+      "keep_source": false,
+      "sha256": "3b2146763a089c610b13a0158fd092a1bb9b270e201f8df4ab4c37da9c1e5474"
+    },
+    "apps/collie/guest/hardware-access.flex": {
+      "destination": "guest/hardware-access.flex",
+      "keep_source": false,
+      "sha256": "18d393bf4f733a972b15284ccf0139c59e9e769088f248a691816da04969b041"
+    },
+    "apps/collie/guest/hardware-api.txt": {
+      "destination": "guest/hardware-api.txt",
+      "keep_source": false,
+      "sha256": "4e0bcd6cf9159761c095848015b7e5c2b6ee86bf741a1c5d94cbb60c5611b4cd"
+    },
+    "apps/collie/guest/hardware.flex": {
+      "destination": "guest/hardware.flex",
+      "keep_source": false,
+      "sha256": "73dbe0609edf217418f44e879eea35dcdf6295f2942a48e82ad850401ddf2c77"
+    },
+    "apps/collie/guest/imagegen.flex": {
+      "destination": "guest/imagegen.flex",
+      "keep_source": false,
+      "sha256": "44cacb4a9c1fd467fbcf625e4b78d5593aa4846af037dbb9e762aa4198a242f6"
+    },
+    "apps/collie/guest/memory.flex": {
+      "destination": "guest/memory.flex",
+      "keep_source": false,
+      "sha256": "851fb7f4d9408da5ab702c45b874a7c7026f8ad1525405c9c1371d9efd433a96"
+    },
+    "apps/collie/guest/nfc.flex": {
+      "destination": "guest/nfc.flex",
+      "keep_source": false,
+      "sha256": "51a91a97f861548e56e525a7bc87273f5babc240df9a1e06e952d1280fd7a235"
+    },
+    "apps/collie/guest/runtime.flex": {
+      "destination": "guest/runtime.flex",
+      "keep_source": false,
+      "sha256": "444664cd8362a12dcf62443ae13d4ae6903bdf4d7b34f6e76d70398123423b1d"
+    },
+    "apps/collie/guest/sensor-direct.flex": {
+      "destination": "guest/sensor-direct.flex",
+      "keep_source": false,
+      "sha256": "dcaa390ce69f5ee1c2820a49830743b069a287bc9ee86a6102c900d6b7ef6d94"
+    },
+    "apps/collie/guest/source.flex": {
+      "destination": "guest/source.flex",
+      "keep_source": false,
+      "sha256": "d9d2157c4f147d619f1c374e5ceb93521fcc8c82133d8a11fb3420b059aa80b5"
+    },
+    "apps/collie/guest/usb-iso.flex": {
+      "destination": "guest/usb-iso.flex",
+      "keep_source": false,
+      "sha256": "3127c769138d863e3f034e4b7527dbbd52b078a67a73482b7bcc73da8886fc03"
+    },
+    "apps/collie/guest/usb-serial.flex": {
+      "destination": "guest/usb-serial.flex",
+      "keep_source": false,
+      "sha256": "b4ef4be69fb79ec6bb397b15d0c23548e9d257669e84c76fc35609149af04276"
+    },
+    "apps/collie/guest/uwb.flex": {
+      "destination": "guest/uwb.flex",
+      "keep_source": false,
+      "sha256": "7f85bfac47d02d84a096ec16ad1892e10e8d058687fddc302220d1b6696f33f0"
+    },
+    "apps/collie/guest/workers.flex": {
+      "destination": "guest/workers.flex",
+      "keep_source": false,
+      "sha256": "1bc14bd8fbffca801e11da3e08cdb6ac941503c2c2ed9f4519392b57a6f949f0"
+    },
+    "apps/collie/lib/json.flex": {
+      "destination": "lib/json.flex",
+      "keep_source": false,
+      "sha256": "e44d153823d54046f1f7c554cdb8656e0a71657b790138a67d38d012ac459d69"
+    },
+    "apps/collie/lib/safe-json.flex": {
+      "destination": "lib/safe-json.flex",
+      "keep_source": false,
+      "sha256": "369d10b7eabe94e674f392a78e5c5f8eb3a0dd5bce258161494021e397c17be7"
+    },
+    "apps/collie/lib/state.flex": {
+      "destination": "lib/state.flex",
+      "keep_source": false,
+      "sha256": "a6240ccff5fe4f7cfacd0deaf003027f2261fbb4429c81cf977b42f2429d23e8"
+    },
+    "apps/collie/main.flex": {
+      "destination": "main.flex",
+      "keep_source": false,
+      "sha256": "67b69655347fd950a05be3853ea00c721f9267c6e0ccac152a535c0a6a39b95b"
+    },
+    "apps/collie/providers/codex.flex": {
+      "destination": "providers/codex.flex",
+      "keep_source": false,
+      "sha256": "e2774298cfa77a0088257388cbf923e95d92c414c95468a6f22e6a0ea1aee0bb"
+    },
+    "apps/collie/providers/context.flex": {
+      "destination": "providers/context.flex",
+      "keep_source": false,
+      "sha256": "14efd2bedeeea3da4ee7a5e9d89a47ad7d3e00668e561d21855543dddd8e12c8"
+    },
+    "apps/collie/providers/imagegen.flex": {
+      "destination": "providers/imagegen.flex",
+      "keep_source": false,
+      "sha256": "0981693e51308fe0fe150c79b6cf81a2b3e2890e96c1dbf2b2749a73f4cc4a27"
+    },
+    "apps/collie/providers/images.flex": {
+      "destination": "providers/images.flex",
+      "keep_source": false,
+      "sha256": "645dcbbe7ac7645115190ce0f85e2c59ae799eb39dbd9443f798529c676f7583"
+    },
+    "apps/collie/providers/instructions.flex": {
+      "destination": "providers/instructions.flex",
+      "keep_source": false,
+      "sha256": "db2c25e4f4f419cc4c9e41ad196816830f5ecccf9c4f12fe651a2aaa7a6e2118"
+    },
+    "apps/collie/providers/stream.flex": {
+      "destination": "providers/stream.flex",
+      "keep_source": false,
+      "sha256": "d7293e2a2d78327c0d38f51a3f9e401cb09b5127bb936e25a683626fa85cd330"
+    },
+    "apps/collie/providers/usage.flex": {
+      "destination": "providers/usage.flex",
+      "keep_source": false,
+      "sha256": "546cd47c85f59cdbd64e4ec5b92ffaecafb783b9086bc189182ecaad959c03f1"
+    },
+    "apps/collie/tests/android-document-provider/AndroidManifest.xml": {
+      "destination": "tests/android-document-provider/AndroidManifest.xml",
+      "keep_source": false,
+      "sha256": "89765246549a0e0d1a63d67d2da93b2c26b518ebaabd25474796a9cfa372d65a"
+    },
+    "apps/collie/tests/android-document-provider/HardwareDocumentControlFixture.java": {
+      "destination": "tests/android-document-provider/HardwareDocumentControlFixture.java",
+      "keep_source": false,
+      "sha256": "54145c8bdb785a8836270ca89539d9127495c9c108be9e1f5c3023301178ac2a"
+    },
+    "apps/collie/tests/android-document-provider/HardwareDocumentProviderFixture.java": {
+      "destination": "tests/android-document-provider/HardwareDocumentProviderFixture.java",
+      "keep_source": false,
+      "sha256": "6f0898c703fc1c19f2ce71c3bf36dd05ddc252b4474a8a4136397988508f6733"
+    },
+    "apps/collie/tests/android-permission-probe/PermissionState.java": {
+      "destination": "tests/android-permission-probe/PermissionState.java",
+      "keep_source": false,
+      "sha256": "85fa95232b82c1a1f4916133b659b7c6d721bba9f67310a524aed2a8a1e1e642"
+    },
+    "apps/collie/tests/android-ui-probe/AndroidManifest.xml": {
+      "destination": "tests/android-ui-probe/AndroidManifest.xml",
+      "keep_source": false,
+      "sha256": "63958e9cde6ca7c422f58edf97e5e1b8a73dc8a786f1189bf4554bc8bf6b8b8d"
+    },
+    "apps/collie/tests/android-ui-probe/UiProbe.java": {
+      "destination": "tests/android-ui-probe/UiProbe.java",
+      "keep_source": false,
+      "sha256": "4028a4e1a583d5aff1189ed5a648ede4a9ad3c77a40ac36527d3abe3e4bf2723"
+    },
+    "apps/collie/tests/android-uwb-provider/AndroidManifest.xml": {
+      "destination": "tests/android-uwb-provider/AndroidManifest.xml",
+      "keep_source": false,
+      "sha256": "5e90afe6ef919dcfb80244bba0bbc6e83e272f19eef3a0245fa69d7991d039d9"
+    },
+    "apps/collie/tests/android-uwb-provider/ReleaseUwbProbe.java": {
+      "destination": "tests/android-uwb-provider/ReleaseUwbProbe.java",
+      "keep_source": false,
+      "sha256": "a77508a8ad0568c2e4aebbf79de6532d9e640de524741b396302f0f8034df567"
+    },
+    "apps/collie/tests/android-uwb-provider/UwbProtocolControl.java": {
+      "destination": "tests/android-uwb-provider/UwbProtocolControl.java",
+      "keep_source": false,
+      "sha256": "1a66a22a5b3a9d349901b60aebbf61b2e871efe465d16797289fc2a817430a74"
+    },
+    "apps/collie/tests/android-uwb-provider/UwbProtocolFixture.java": {
+      "destination": "tests/android-uwb-provider/UwbProtocolFixture.java",
+      "keep_source": false,
+      "sha256": "4a8dc29b8b8477571268343f1e90df762df96ae21ffd70a061e808a5ebd4e50b"
+    },
+    "apps/collie/tests/android/HardwareAccessibilityChecks.java": {
+      "destination": "tests/android/HardwareAccessibilityChecks.java",
+      "keep_source": false,
+      "sha256": "daaac38527e0f087f34297558c13b65bf57dc4eed648789c0bb8ac725c379f2e"
+    },
+    "apps/collie/tests/android/HardwareBiometricChecks.java": {
+      "destination": "tests/android/HardwareBiometricChecks.java",
+      "keep_source": false,
+      "sha256": "6bb991d964cca9711bab988cb2244ca37a8fe413c6fc1edcf8229fdf7da2f1e1"
+    },
+    "apps/collie/tests/android/HardwareBleSetChecks.java": {
+      "destination": "tests/android/HardwareBleSetChecks.java",
+      "keep_source": false,
+      "sha256": "12401e7c1219f93e8ac36d38b1ef700679f337135ec356a1be08d011f6bb673b"
+    },
+    "apps/collie/tests/android/HardwareBluetoothDeadlineChecks.java": {
+      "destination": "tests/android/HardwareBluetoothDeadlineChecks.java",
+      "keep_source": false,
+      "sha256": "b83298717d59eb1c991f8af306f0144bf4a287855249d666c8f789601773fe17"
+    },
+    "apps/collie/tests/android/HardwareBluetoothIoChecks.java": {
+      "destination": "tests/android/HardwareBluetoothIoChecks.java",
+      "keep_source": false,
+      "sha256": "6353f4a7efc6c92e3bb19b7cb007a9ae590147ed6114b2df78af3dc449897a2c"
+    },
+    "apps/collie/tests/android/HardwareBluetoothLossChecks.java": {
+      "destination": "tests/android/HardwareBluetoothLossChecks.java",
+      "keep_source": false,
+      "sha256": "a87ee3bdd06116f5a3f61bfc7293e993641d1671d46c9f0bb2c7cab6bd76ed54"
+    },
+    "apps/collie/tests/android/HardwareCameraChecks.java": {
+      "destination": "tests/android/HardwareCameraChecks.java",
+      "keep_source": false,
+      "sha256": "55c182d5b2b2731142beab2e014684d16a17d52a240684c89f6926ba005812ea"
+    },
+    "apps/collie/tests/android/HardwareCameraMetadataChecks.java": {
+      "destination": "tests/android/HardwareCameraMetadataChecks.java",
+      "keep_source": false,
+      "sha256": "aa5340ba02818d407e5c73a364e57ac2b75ac61f026fcd916d26044c565a1433"
+    },
+    "apps/collie/tests/android/HardwareCameraRawChecks.java": {
+      "destination": "tests/android/HardwareCameraRawChecks.java",
+      "keep_source": false,
+      "sha256": "558839d32b5984ce333293ff383c7842839417f9faf6422fba8bc0684b0886c8"
+    },
+    "apps/collie/tests/android/HardwareCameraVideoProfileChecks.java": {
+      "destination": "tests/android/HardwareCameraVideoProfileChecks.java",
+      "keep_source": false,
+      "sha256": "b696121a52811f064ffd3db246e37ee6c4cc132878115042472566788ab2f186"
+    },
+    "apps/collie/tests/android/HardwareCardServiceChecks.java": {
+      "destination": "tests/android/HardwareCardServiceChecks.java",
+      "keep_source": false,
+      "sha256": "ba22e7dff5fc64bbd6b09fa16e50ca4de7cbb4ec9707f0888ba785f49de17107"
+    },
+    "apps/collie/tests/android/HardwareDocumentChecks.java": {
+      "destination": "tests/android/HardwareDocumentChecks.java",
+      "keep_source": false,
+      "sha256": "f32c9e30a96ef3414ef311ff2c74e792ed92deae6e55062edfef82f6a29b2261"
+    },
+    "apps/collie/tests/android/HardwareDocumentProviderChecks.java": {
+      "destination": "tests/android/HardwareDocumentProviderChecks.java",
+      "keep_source": false,
+      "sha256": "b547727223597b10ed31cb641823ece1736c3d1061a4f0cb88d0fedfa3ea7bf6"
+    },
+    "apps/collie/tests/android/HardwareHapticChecks.java": {
+      "destination": "tests/android/HardwareHapticChecks.java",
+      "keep_source": false,
+      "sha256": "95ae249bce8f77d3dbd4b72a9ac2fc597d67fb8120c485fbf7647314657b7775"
+    },
+    "apps/collie/tests/android/HardwareHapticDeviceChecks.java": {
+      "destination": "tests/android/HardwareHapticDeviceChecks.java",
+      "keep_source": false,
+      "sha256": "fc04f158712e7a74a15395455eef1a34ddbf6a6973639de8e121a8daa588c378"
+    },
+    "apps/collie/tests/android/HardwareHapticEnvelopeChecks.java": {
+      "destination": "tests/android/HardwareHapticEnvelopeChecks.java",
+      "keep_source": false,
+      "sha256": "7f79f6cf0301726beb9b68415d9ee5fd7c6dd4343e1c1b513bd9cd8a2be02ed0"
+    },
+    "apps/collie/tests/android/HardwareHapticRepeatChecks.java": {
+      "destination": "tests/android/HardwareHapticRepeatChecks.java",
+      "keep_source": false,
+      "sha256": "3aef31393d65428cd96df858606f9666634d0761c9df92143269592a2925053c"
+    },
+    "apps/collie/tests/android/HardwareHceChecks.java": {
+      "destination": "tests/android/HardwareHceChecks.java",
+      "keep_source": false,
+      "sha256": "3eeb0a8d1c22e96f74ad999a8d101b0fad8eab62e2913bbf7961a30fb55e9c72"
+    },
+    "apps/collie/tests/android/HardwareHceControlChecks.java": {
+      "destination": "tests/android/HardwareHceControlChecks.java",
+      "keep_source": false,
+      "sha256": "c51c18bbb6cc6a3a82cc94a9cae54ba4a075e5e4259dd170b0e22d71ecfd29d0"
+    },
+    "apps/collie/tests/android/HardwareHcePeerFixture.java": {
+      "destination": "tests/android/HardwareHcePeerFixture.java",
+      "keep_source": false,
+      "sha256": "63fb29a0c4bca3a19db2fff32ea861a3ee12c7f3ffc943dbe5ba5ccc8c045f9f"
+    },
+    "apps/collie/tests/android/HardwareInputChecks.java": {
+      "destination": "tests/android/HardwareInputChecks.java",
+      "keep_source": false,
+      "sha256": "aad66aa3489b2b2cf8cb9ca85e48e98cec55489057d56cec6a37487e757af014"
+    },
+    "apps/collie/tests/android/HardwareNetworkChecks.java": {
+      "destination": "tests/android/HardwareNetworkChecks.java",
+      "keep_source": false,
+      "sha256": "e61890912692cdcae2c7e7c9c382cab553cc2d1d4567a1260318e7dfc17ab9d8"
+    },
+    "apps/collie/tests/android/HardwareScreenChecks.java": {
+      "destination": "tests/android/HardwareScreenChecks.java",
+      "keep_source": false,
+      "sha256": "b7b5841ec804b2e9fff9fe5b77269e3203be347b6e328e02dbbfb658e9d8d981"
+    },
+    "apps/collie/tests/android/HardwareSensorChecks.java": {
+      "destination": "tests/android/HardwareSensorChecks.java",
+      "keep_source": false,
+      "sha256": "d179f9cae3d63f96915f4245f03e359b299ebaa6e1776472f7dc7065caa5193f"
+    },
+    "apps/collie/tests/android/HardwareSensorDirectChecks.java": {
+      "destination": "tests/android/HardwareSensorDirectChecks.java",
+      "keep_source": false,
+      "sha256": "2201e8c2a7a6a0a3a86071c325e9719b5f73fad39aea79279a01226fe74666ef"
+    },
+    "apps/collie/tests/android/HardwareUsbIsoChecks.java": {
+      "destination": "tests/android/HardwareUsbIsoChecks.java",
+      "keep_source": false,
+      "sha256": "81bf75135ceaba538a51bbd0df10db4165ff7fc81975d5ac10b62d0f8bb6f384"
+    },
+    "apps/collie/tests/android/HardwareUwbAospChecks.java": {
+      "destination": "tests/android/HardwareUwbAospChecks.java",
+      "keep_source": false,
+      "sha256": "3163d434636e349699faefdb160f357e77dcc7f7607db84635ac6fb00d49ac32"
+    },
+    "apps/collie/tests/android/HardwareUwbChecks.java": {
+      "destination": "tests/android/HardwareUwbChecks.java",
+      "keep_source": false,
+      "sha256": "18cb2230e0378339bbc5b828a92e8980922f1bbc590a4610c7d79b9baa08172d"
+    },
+    "apps/collie/tests/android/HardwareUwbGmsChecks.java": {
+      "destination": "tests/android/HardwareUwbGmsChecks.java",
+      "keep_source": false,
+      "sha256": "ea98425c7baafad58ce532a23052d37dfc20fab1650216a833d28fba6984b186"
+    },
+    "apps/collie/tests/android/MidiLoopbackFixture.java": {
+      "destination": "tests/android/MidiLoopbackFixture.java",
+      "keep_source": false,
+      "sha256": "d6d7556a49127fba492d6b4a8e9fc7d22925ca095fce2d480293b69a1b0dc882"
+    },
+    "apps/collie/tests/android/UiRendererChecks.java": {
+      "destination": "tests/android/UiRendererChecks.java",
+      "keep_source": false,
+      "sha256": "c821031f75b48fa36c39bed5969cb457b6d3699e7e55e24ab1545ad17b5b5688"
+    },
+    "apps/collie/tests/android/res/xml/midi_loopback_fixture.xml": {
+      "destination": "tests/android/res/xml/midi_loopback_fixture.xml",
+      "keep_source": false,
+      "sha256": "dcfae27c61114e2f7d7ee80541d48d746a909cbea0a85b167476d63c36b121d4"
+    },
+    "apps/collie/tests/android/sensor-direct-fixture.c": {
+      "destination": "tests/android/sensor-direct-fixture.c",
+      "keep_source": false,
+      "sha256": "6d45ff15004692e7478d069ad33be5be208eaac92815ac5c47c2ba441b5a9628"
+    },
+    "apps/collie/tests/android/serial-gadget-loopback.c": {
+      "destination": "tests/android/serial-gadget-loopback.c",
+      "keep_source": false,
+      "sha256": "48b20482716d41c445ef37d709ade84534db289c3f3279f770ac8d2b8b952f23"
+    },
+    "apps/collie/tests/android/usb-iso-native-test.c": {
+      "destination": "tests/android/usb-iso-native-test.c",
+      "keep_source": false,
+      "sha256": "4df05aa2c14ada44761e96ccd07f95a81aa0db96ab3af9e3151f6f18948081c6"
+    },
+    "apps/collie/tests/ble-lifecycle-live.flex": {
+      "destination": "tests/ble-lifecycle-live.flex",
+      "keep_source": false,
+      "sha256": "09a4bce9a370f4502d2fc6cf12676453a201603498341f745e0cac29227ca09f"
+    },
+    "apps/collie/tests/ble-live.flex": {
+      "destination": "tests/ble-live.flex",
+      "keep_source": false,
+      "sha256": "92a34ea6f8eaff1176a484734fe569f962b75e8bd66e42828bd520cd72d115c0"
+    },
+    "apps/collie/tests/ble-set-live.flex": {
+      "destination": "tests/ble-set-live.flex",
+      "keep_source": false,
+      "sha256": "2805e1d978082de5bd18493644edfd0eab507a5fff82b71960129c6443904488"
+    },
+    "apps/collie/tests/bluetooth-incoming.flex": {
+      "destination": "tests/bluetooth-incoming.flex",
+      "keep_source": false,
+      "sha256": "4df7c8a8e3053227e32b27f7597b22f14dae3708304ce920cd323061ee1fdc40"
+    },
+    "apps/collie/tests/bluetooth-live.flex": {
+      "destination": "tests/bluetooth-live.flex",
+      "keep_source": false,
+      "sha256": "8533c8793a61f792fb11c230d5a58b5596c9c519cd15e37f9b161dcca02c8c88"
+    },
+    "apps/collie/tests/bluetooth-peer-live.flex": {
+      "destination": "tests/bluetooth-peer-live.flex",
+      "keep_source": false,
+      "sha256": "9cdff2c14fdc79017a703398e6544a4b1dc62d6721c50441499578d86cd19be7"
+    },
+    "apps/collie/tests/camera-live.flex": {
+      "destination": "tests/camera-live.flex",
+      "keep_source": false,
+      "sha256": "501190b5793d2e348e640acee79132db97ab1973f5225ee03c99d75a97ef6555"
+    },
+    "apps/collie/tests/camera.flex": {
+      "destination": "tests/camera.flex",
+      "keep_source": false,
+      "sha256": "922daf6b7d890a1f7e896d67e1065d9721b196d65cd9955cbd1014fb5556691c"
+    },
+    "apps/collie/tests/cellular-live.flex": {
+      "destination": "tests/cellular-live.flex",
+      "keep_source": false,
+      "sha256": "5300fb4b67eede9b02679d89ca3dddd50fe2da660e089c6a39e78504ef9b4c32"
+    },
+    "apps/collie/tests/document-provider.flex": {
+      "destination": "tests/document-provider.flex",
+      "keep_source": false,
+      "sha256": "b497390f42b31c3c30db6eca8cfbe64fcdd3ac802e93a1822aa8898850d7c679"
+    },
+    "apps/collie/tests/documents-live.flex": {
+      "destination": "tests/documents-live.flex",
+      "keep_source": false,
+      "sha256": "685e8b0262881430a460696ea950f3a9592883f7922fde343fe98a991889ea71"
+    },
+    "apps/collie/tests/fixtures/greeting.json": {
+      "destination": "tests/fixtures/greeting.json",
+      "keep_source": false,
+      "sha256": "d02a66fcee3c5d6d1f90a11a405ca18f6398af268afa55902a70db62c8983d25"
+    },
+    "apps/collie/tests/fixtures/protocol-repair.json": {
+      "destination": "tests/fixtures/protocol-repair.json",
+      "keep_source": false,
+      "sha256": "80be0fdabdd5211353d7e9f48c60ea356580fac468e5b43166d7544a746ad093"
+    },
+    "apps/collie/tests/fixtures/repair.json": {
+      "destination": "tests/fixtures/repair.json",
+      "keep_source": false,
+      "sha256": "b1bec2be273120d7575ae9fdfc600b8b491144075008a3e9ad92540176cd20e9"
+    },
+    "apps/collie/tests/gatt-live.flex": {
+      "destination": "tests/gatt-live.flex",
+      "keep_source": false,
+      "sha256": "05b221e13783e1cc37c576b5193d50915350c09aae9af0f21c980426dcedd5bc"
+    },
+    "apps/collie/tests/gatt-server-live.flex": {
+      "destination": "tests/gatt-server-live.flex",
+      "keep_source": false,
+      "sha256": "7502391f7e3428c3b7bca90ab5cc42e68b989305ce7e00bc64459d2045ce70b6"
+    },
+    "apps/collie/tests/guest-copy.flex": {
+      "destination": "tests/guest-copy.flex",
+      "keep_source": false,
+      "sha256": "fe2318a3230dd89d57d04dce114732de1a38fcef91ae74f84b2f4095e84a6739"
+    },
+    "apps/collie/tests/haptics.flex": {
+      "destination": "tests/haptics.flex",
+      "keep_source": false,
+      "sha256": "faddd1fbd3e8837aa66635c235707d14bd50b7c2ff99ce6c9cf62814a83f9984"
+    },
+    "apps/collie/tests/hardware-access-live.flex": {
+      "destination": "tests/hardware-access-live.flex",
+      "keep_source": false,
+      "sha256": "d0788deb981057f2e9af933c4dd001d764b54432f868e4a681c4ff1e5aa9419a"
+    },
+    "apps/collie/tests/hardware-core.flex": {
+      "destination": "tests/hardware-core.flex",
+      "keep_source": false,
+      "sha256": "f70a03e463c237c1546b91a52920bbe38781af87a63046a70ce5e65351070dc0"
+    },
+    "apps/collie/tests/hardware-live.flex": {
+      "destination": "tests/hardware-live.flex",
+      "keep_source": false,
+      "sha256": "4ebb08ad6e92ca44452e45634e11655cd737915f69c56033185a1ec28a59edaf"
+    },
+    "apps/collie/tests/hid-lifecycle.flex": {
+      "destination": "tests/hid-lifecycle.flex",
+      "keep_source": false,
+      "sha256": "e38154528b368499e815fee59ab952c6c9dfa3e477fd82b8833e4794a2b97a73"
+    },
+    "apps/collie/tests/hid-live.flex": {
+      "destination": "tests/hid-live.flex",
+      "keep_source": false,
+      "sha256": "d6953d84f6fc94a9620fc72c21237e3b5ec6e120c37cd88dfe83f72e34695f12"
+    },
+    "apps/collie/tests/input-live.flex": {
+      "destination": "tests/input-live.flex",
+      "keep_source": false,
+      "sha256": "56ece36d4836404adaeac3482c29a4a4d9fbc83ee97fe258f1cd3dc14372b56c"
+    },
+    "apps/collie/tests/lazy-permissions-live.flex": {
+      "destination": "tests/lazy-permissions-live.flex",
+      "keep_source": false,
+      "sha256": "1fdc4c06bd294bf17c3b115aee9030f26b9c3f2ed80e8ee063dc48bb08423f6f"
+    },
+    "apps/collie/tests/nfc.flex": {
+      "destination": "tests/nfc.flex",
+      "keep_source": false,
+      "sha256": "4e125c20e2c558a59e49b70b7c1aff1ea1af208867289682e3377274a4361cab"
+    },
+    "apps/collie/tests/p2p-live.flex": {
+      "destination": "tests/p2p-live.flex",
+      "keep_source": false,
+      "sha256": "1c6d9bb4f1cf6176e06e9fde87dbdc8ee9e08b04f635de9cd708b484e2218475"
+    },
+    "apps/collie/tests/print-json.flex": {
+      "destination": "tests/print-json.flex",
+      "keep_source": false,
+      "sha256": "2389e6589794581f53e9ada1dad970de267bcaa1db9e121fdb74a5376ac194c1"
+    },
+    "apps/collie/tests/screen-live.flex": {
+      "destination": "tests/screen-live.flex",
+      "keep_source": false,
+      "sha256": "74e6d3862bd82e3f1329c231b0657a3924b202d9c9e03578c34c527a6b2f49b9"
+    },
+    "apps/collie/tests/sensor-direct.flex": {
+      "destination": "tests/sensor-direct.flex",
+      "keep_source": false,
+      "sha256": "e65a14c9d621d764e3bfe1710243428ac32cd87da68a070c6f624f35f7d54752"
+    },
+    "apps/collie/tests/sensors.flex": {
+      "destination": "tests/sensors.flex",
+      "keep_source": false,
+      "sha256": "faf8b630baaa0cdc2528da517da1c7c1f1e8bea32671e5a2c830a86eba2ce71c"
+    },
+    "apps/collie/tests/shared-core.flex": {
+      "destination": "tests/shared-core.flex",
+      "keep_source": false,
+      "sha256": "fd28b1dbad576f1375014518f45b606173c95b691dc36f1a34a5863cdfb8ded6"
+    },
+    "apps/collie/tests/signals-live.flex": {
+      "destination": "tests/signals-live.flex",
+      "keep_source": false,
+      "sha256": "4d6988db1a4ad12149700ebbf67b1c6b1abc92775c6db9dc2fa77a65750566c2"
+    },
+    "apps/collie/tests/test.flex": {
+      "destination": "tests/test.flex",
+      "keep_source": false,
+      "sha256": "de86c079fe75bd251468e3bc8d67960b181f71dec2732de1e602b04a4a732fcf"
+    },
+    "apps/collie/tests/tui-worker.flex": {
+      "destination": "tests/tui-worker.flex",
+      "keep_source": false,
+      "sha256": "5ef0735cf2ce738ec0c3c51a0b57e53d52e0342a1715fbf871086f4f90959774"
+    },
+    "apps/collie/tests/tui.py": {
+      "destination": "tests/tui.py",
+      "keep_source": false,
+      "sha256": "3633ff18b7eb1f233234ea1eaac28dc0f2ec04a5774bc165926be04c174ab766"
+    },
+    "apps/collie/tests/ui.flex": {
+      "destination": "tests/ui.flex",
+      "keep_source": false,
+      "sha256": "9a1da9a44bfc7b234434e9b2892aea3bd04185c8e7ae60c6118f064d87dee8f2"
+    },
+    "apps/collie/tests/usb-iso.flex": {
+      "destination": "tests/usb-iso.flex",
+      "keep_source": false,
+      "sha256": "c9aba5e5c322a8ddada4336809709399879c4d541e325f839e4e0c145a846a8d"
+    },
+    "apps/collie/tests/usb-serial-live.flex": {
+      "destination": "tests/usb-serial-live.flex",
+      "keep_source": false,
+      "sha256": "1e02c6593234ecfce3674d39303991636d44115e8421144d4bc2464a3b62f6d1"
+    },
+    "apps/collie/tests/usb-serial.flex": {
+      "destination": "tests/usb-serial.flex",
+      "keep_source": false,
+      "sha256": "103cb045c1d34e57fd944e23b66bb0496976f15509afc5cd6b9fbb1aec961a78"
+    },
+    "apps/collie/tests/uwb-peer-live.flex": {
+      "destination": "tests/uwb-peer-live.flex",
+      "keep_source": false,
+      "sha256": "71ac180ff13fce5a255923d54d2ed456d0ca281ac272a79fabf3206a0385b3f9"
+    },
+    "apps/collie/tests/uwb-provider-live.flex": {
+      "destination": "tests/uwb-provider-live.flex",
+      "keep_source": false,
+      "sha256": "3b8849dcbe6f592056f54f9d26495dd1058e9fdc6d77d3c43ac04026a66697fb"
+    },
+    "apps/collie/tests/uwb.flex": {
+      "destination": "tests/uwb.flex",
+      "keep_source": false,
+      "sha256": "ce838536a5f61cdf8bc7dfe85c530dc726229184d9625a45013ff0c682cd2f4e"
+    },
+    "apps/collie/tests/wifi-live.flex": {
+      "destination": "tests/wifi-live.flex",
+      "keep_source": false,
+      "sha256": "fa02595477b3d5278a6d422a0ef3637d8f4d76b4b99fd0f0e0adb7502d9e8767"
+    },
+    "apps/collie/tests/workers-live.flex": {
+      "destination": "tests/workers-live.flex",
+      "keep_source": false,
+      "sha256": "eb75c5e8cb975e915a8737055305875b5234c6ec75fbc59a257886cd8a40e869"
+    },
+    "apps/collie/tests/workspace.flex": {
+      "destination": "tests/workspace.flex",
+      "keep_source": false,
+      "sha256": "36e7e4da3df6c34b23137a0e8fbfeb333795b4ae74275a7585ec0a3c136565b9"
+    },
+    "apps/collie/tooling.flex": {
+      "destination": "tooling.flex",
+      "keep_source": false,
+      "sha256": "42c823427afc1867106b0bfa8a81fa31c7e89a7fcca1f47d7d2125d4cd96500e"
+    },
+    "apps/collie/ui/app.flex": {
+      "destination": "ui/app.flex",
+      "keep_source": false,
+      "sha256": "1478986c5eb14c8ceddb2ec11c0874476171a546ee71053054a09cfc8fba7802"
+    },
+    "apps/collie/ui/chat.flex": {
+      "destination": "ui/chat.flex",
+      "keep_source": false,
+      "sha256": "c89c3681c129244e6db0b361b841dd16da93570d5a39ecc095ef23b86b619b08"
+    },
+    "apps/collie/ui/chats.flex": {
+      "destination": "ui/chats.flex",
+      "keep_source": false,
+      "sha256": "8c330ac6737b953b72a43a64fb6366702f0c207c1b9f441af031e3774ffec71b"
+    },
+    "apps/collie/ui/components.flex": {
+      "destination": "ui/components.flex",
+      "keep_source": false,
+      "sha256": "97c0e4c521d11c4670281d8c5fd2fa70aefe7714339dda68fdf290522809f056"
+    },
+    "apps/collie/ui/desktop.flex": {
+      "destination": "ui/desktop.flex",
+      "keep_source": false,
+      "sha256": "8933e20230d72855ae8273b2294e6007d8020de435c8a4098068ebba18d6fa9c"
+    },
+    "apps/collie/ui/markdown.flex": {
+      "destination": "ui/markdown.flex",
+      "keep_source": false,
+      "sha256": "f5aeb72022cc5ceed2ecc985d1c243295a832dfc870ab93938f9023fb7a7f0e4"
+    },
+    "apps/collie/ui/model.flex": {
+      "destination": "ui/model.flex",
+      "keep_source": false,
+      "sha256": "cb86b824a8171d6d42ac81fb3ed08215ecc32b302fba2e6014b38774ccabde51"
+    },
+    "apps/collie/ui/pages.flex": {
+      "destination": "ui/pages.flex",
+      "keep_source": false,
+      "sha256": "d5e4b2e2f48784774ea040429a2a364491815a32224c62c6ab565430adc57b1c"
+    },
+    "apps/collie/ui/permissions.flex": {
+      "destination": "ui/permissions.flex",
+      "keep_source": false,
+      "sha256": "8ad766d2c52eb3328bd664d59f418eab5bc49903be2127debf93d633ece6daa6"
+    },
+    "apps/collie/ui/settings.flex": {
+      "destination": "ui/settings.flex",
+      "keep_source": false,
+      "sha256": "332388066aded02a27aa6b248718843b18ed0e1f26a9a53f793f83d9444b4e3c"
+    },
+    "apps/collie/ui/sidebar.flex": {
+      "destination": "ui/sidebar.flex",
+      "keep_source": false,
+      "sha256": "1b06d3b7430b0ac204748d76d9bb527e95e4ca643be4818a0366120396f14483"
+    },
+    "apps/collie/ui/thinking.flex": {
+      "destination": "ui/thinking.flex",
+      "keep_source": false,
+      "sha256": "310eedea026d29a336a400a832ba25d4fc5cbf14a97ad7d3e8eb865e0083918a"
+    },
+    "apps/collie/ui/workspace-events.flex": {
+      "destination": "ui/workspace-events.flex",
+      "keep_source": false,
+      "sha256": "feab79c8499e3224cf389306411b79401d513f71c06590a46a1a48b48545fc1b"
+    },
+    "apps/collie/ui/workspace-model.flex": {
+      "destination": "ui/workspace-model.flex",
+      "keep_source": false,
+      "sha256": "369b667a8cf247fbddefb430c64f6e429d201a72477461cb4e6bb157cabb0be6"
+    },
+    "apps/collie/ui/workspace.flex": {
+      "destination": "ui/workspace.flex",
+      "keep_source": false,
+      "sha256": "47ee3eb44475f843c82b2be6fb347e5847b7d4b3a67afb1c031a6e4d4ca33d0b"
+    },
+    "examples/ui/collie-permissions.flex": {
+      "destination": "examples/ui/collie-permissions.flex",
+      "keep_source": false,
+      "sha256": "5a0b775b0dce4595ffd68fef7f742b8c98aa2ae4b8ca784823c4542c1abd5299"
+    },
+    "examples/ui/desktop-permissions.flex": {
+      "destination": "examples/ui/desktop-permissions.flex",
+      "keep_source": false,
+      "sha256": "489f9b68bd4c04fcb1397874c07536499ef67e59d21a56fbc2ff0fe3c6518fa5"
+    },
+    "scripts/benchmark-ui.py": {
+      "destination": "scripts/benchmark-ui.py",
+      "keep_source": false,
+      "sha256": "190748a4d09e38033f046893b28ca37e803776a46938dee387b46c41e934d70d"
+    },
+    "scripts/build-collie-android.flex": {
+      "destination": "scripts/build-collie-android.flex",
+      "keep_source": false,
+      "sha256": "6c93f3be212f28f716ac2fcff3d29f7e20306e77438027c0bc74eddd122c9dea"
+    },
+    "scripts/build-collie-document-provider.flex": {
+      "destination": "scripts/build-collie-document-provider.flex",
+      "keep_source": false,
+      "sha256": "0053f0adc331e4ee8e777780156f852ca7034e8408ee1eda66409fc0ae5b4d79"
+    },
+    "scripts/build-collie-serial-fixture.flex": {
+      "destination": "scripts/build-collie-serial-fixture.flex",
+      "keep_source": false,
+      "sha256": "c68a4f0c15367aa25ba1e5999ddd0f0aa23c0b6f132cb96db29cae38dbf5449b"
+    },
+    "scripts/build-collie-ui-probe.flex": {
+      "destination": "scripts/build-collie-ui-probe.flex",
+      "keep_source": false,
+      "sha256": "3d6f21e9cf7a56b59e265fd4d3d6c03eeb0959d5e666cc946a17dbbdc13a3abf"
+    },
+    "scripts/build-collie-uwb-provider.flex": {
+      "destination": "scripts/build-collie-uwb-provider.flex",
+      "keep_source": false,
+      "sha256": "bf08d048118c0067313c60f6c30cfe5770cf7a63c2bc3a33dc1088a7b7b2a8a9"
+    },
+    "scripts/build-collie.flex": {
+      "destination": "scripts/build-collie.flex",
+      "keep_source": false,
+      "sha256": "f292e53e34b13d17d52502621bb651cb2bbca8976268d7eff77ac2e3ab5d77ce"
+    },
+    "scripts/build-ui-benchmark.flex": {
+      "destination": "scripts/build-ui-benchmark.flex",
+      "keep_source": false,
+      "sha256": "83c78fc64d1b9cc2b7c4317e034b57a1cb840a84c4aa7dce989855e4b4df05fa"
+    },
+    "scripts/check-collie-hid-platform.flex": {
+      "destination": "scripts/check-collie-hid-platform.flex",
+      "keep_source": false,
+      "sha256": "d02fa01ccf863c9283b407007c75edc215080fb7cd7f8fbb484c402008b62ec6"
+    },
+    "scripts/collie_native_test.py": {
+      "destination": "scripts/collie_native_test.py",
+      "keep_source": false,
+      "sha256": "2a9a17fd7aee7679278f72c3fadd96832ff61df7488953e636adba69594d2a93"
+    },
+    "scripts/compare-native-submission.py": {
+      "destination": "scripts/compare-native-submission.py",
+      "keep_source": false,
+      "sha256": "5c513bb3777e04c5e61b7236f2a39f8664f0a99f4f0eba7361d4df406be53bdf"
+    },
+    "scripts/embed-collie-guest.flex": {
+      "destination": "scripts/embed-collie-guest.flex",
+      "keep_source": false,
+      "sha256": "2255c24a892eb7c358adaceb85aa8bea46854069b5d48a83f8c8671d25069878"
+    },
+    "scripts/fixtures/collie-ble-peer.py": {
+      "destination": "scripts/fixtures/collie-ble-peer.py",
+      "keep_source": false,
+      "sha256": "a3feb18e78f1eec41bc54dca917113d36682f214b6eb2ec4b5b2633bf97389c1"
+    },
+    "scripts/fixtures/collie-ble-sets-peer.py": {
+      "destination": "scripts/fixtures/collie-ble-sets-peer.py",
+      "keep_source": false,
+      "sha256": "cd35635c1b9a55f963e81ce8fa69445c3a50f6f4ea10f4355660757a0b208664"
+    },
+    "scripts/fixtures/collie-bluetooth-peer.py": {
+      "destination": "scripts/fixtures/collie-bluetooth-peer.py",
+      "keep_source": false,
+      "sha256": "624bdd64bc0697c58d2ed027ea168a4e412ac7ee95e38ad906ed0864ee3cc098"
+    },
+    "scripts/fixtures/collie-gatt-client.py": {
+      "destination": "scripts/fixtures/collie-gatt-client.py",
+      "keep_source": false,
+      "sha256": "f520d117ff788472569dea0d8d2100fdac87f54f96483df60a15c2d56d3c7136"
+    },
+    "scripts/fixtures/collie-gatt-peer.py": {
+      "destination": "scripts/fixtures/collie-gatt-peer.py",
+      "keep_source": false,
+      "sha256": "b26ffbaffce524946938754a05e9037251665cbf2610ec17624f46c6f79f2491"
+    },
+    "scripts/fixtures/collie-hid-host.py": {
+      "destination": "scripts/fixtures/collie-hid-host.py",
+      "keep_source": false,
+      "sha256": "29b847a45fceed62a15ff7dcd3f7a69f73c7ebba23db4a7ff173bfcffb28c768"
+    },
+    "scripts/fixtures/collie-input-device.c": {
+      "destination": "scripts/fixtures/collie-input-device.c",
+      "keep_source": false,
+      "sha256": "3444bf44318a04d165abcf91da503b5676352041640067bdd30036cefad38f9d"
+    },
+    "scripts/fixtures/collie-rfcomm-probe.flex": {
+      "destination": "scripts/fixtures/collie-rfcomm-probe.flex",
+      "keep_source": false,
+      "sha256": "b32e55fd5a49c4ba8de6882397abf5db1c8ad58d6a2a0222525e960b8f7473a9"
+    },
+    "scripts/lib/android-ble-set-test.flex": {
+      "destination": "scripts/lib/android-ble-set-test.flex",
+      "keep_source": false,
+      "sha256": "7efff32e66a112165157c37875af6d68ca82a37ccb76fcac5e875ed5f2e66a31"
+    },
+    "scripts/lib/android-bluetooth-pair-test.flex": {
+      "destination": "scripts/lib/android-bluetooth-pair-test.flex",
+      "keep_source": false,
+      "sha256": "ef7d7d3ddb81e241a079f3829a16c8c8ca24bb8bf57155e4a4ee917e8f3ee2db"
+    },
+    "scripts/lib/android-live-test.flex": {
+      "destination": "scripts/lib/android-live-test.flex",
+      "keep_source": false,
+      "sha256": "dfe5db803524d453ede14d80437e07643b96048694c59722bf9bce673211dc27"
+    },
+    "scripts/lib/android-multi-test.flex": {
+      "destination": "scripts/lib/android-multi-test.flex",
+      "keep_source": false,
+      "sha256": "d08336f8708cfe4a038dfb491eed6f06f2d1eeed4e6fca343a54de3cf688b6b3"
+    },
+    "scripts/lib/android-peer-test.flex": {
+      "destination": "scripts/lib/android-peer-test.flex",
+      "keep_source": false,
+      "sha256": "771ec55496fd5ff6330de8795332d2c7515db299e125746eef891afd3c55797f"
+    },
+    "scripts/lib/android-preferences-test.flex": {
+      "destination": "scripts/lib/android-preferences-test.flex",
+      "keep_source": false,
+      "sha256": "f09fdeef3648647814af0c117a0a83e865e1d71ff43eb97b085ab9dbe3ea6664"
+    },
+    "scripts/lib/android-radio-test.flex": {
+      "destination": "scripts/lib/android-radio-test.flex",
+      "keep_source": false,
+      "sha256": "0fb2bb0eee277d07d8334c19d9f09c260a6ff5295cfe54f50bdf8bde659b78b2"
+    },
+    "scripts/lib/android-ui-test.flex": {
+      "destination": "scripts/lib/android-ui-test.flex",
+      "keep_source": false,
+      "sha256": "13120edca89e205846fc5c3bcf69269978ec82fbc3fb45c21542d48a06c36c19"
+    },
+    "scripts/lib/android-usb-test.flex": {
+      "destination": "scripts/lib/android-usb-test.flex",
+      "keep_source": false,
+      "sha256": "962657dfb1a72360487edb857546ae28d3e851e491a4b46c0e3612c7b37c714d"
+    },
+    "scripts/lib/collie-android-test.flex": {
+      "destination": "scripts/lib/collie-android-test.flex",
+      "keep_source": false,
+      "sha256": "ca5c3431f9271029e6215198ec5e50ffa34407dd7cf5067f568feace912fdae0"
+    },
+    "scripts/lib/collie-autoreview-ui-test.flex": {
+      "destination": "scripts/lib/collie-autoreview-ui-test.flex",
+      "keep_source": false,
+      "sha256": "953f43e826d3003e4b225dc97c06354e379320f2b1e71ab6f1fc33e63c2259bc"
+    },
+    "scripts/lib/collie-source.flex": {
+      "destination": "scripts/lib/collie-source.flex",
+      "keep_source": false,
+      "sha256": "d22f0565e784f493ee89176798cdadfd7004d387260be3bcad87c65ab46ca259"
+    },
+    "scripts/lib/collie-test.flex": {
+      "destination": "scripts/lib/collie-test.flex",
+      "keep_source": false,
+      "sha256": "ee0a3cbb2838138354e2eba7504e87c6946a22876eeb167e1650e48c15c08283"
+    },
+    "scripts/lib/collie-ui-android-parity-test.flex": {
+      "destination": "scripts/lib/collie-ui-android-parity-test.flex",
+      "keep_source": false,
+      "sha256": "5a86579b20ac93fae319db5b04b252074f3d62326350fbddabb0df089f532759"
+    },
+    "scripts/lib/collie-ui-desktop-test.flex": {
+      "destination": "scripts/lib/collie-ui-desktop-test.flex",
+      "keep_source": false,
+      "sha256": "4854041bc7a5e3d6eca6f5031a1d290574c34fc78b404ea55b1384d7993629c3"
+    },
+    "scripts/lib/ui-widget-test.flex": {
+      "destination": "scripts/lib/ui-widget-test.flex",
+      "keep_source": true,
+      "sha256": "f1358d83622900e811bfb7df5d856753b7866d3550ff1f9e4709f1c58830d2d5"
+    },
+    "scripts/test-collie-accessibility-android.flex": {
+      "destination": "scripts/test-collie-accessibility-android.flex",
+      "keep_source": false,
+      "sha256": "b2aa35b45154e76a79e752673ed7cd3124c8696f57848e2714570aa5846ce2e4"
+    },
+    "scripts/test-collie-account.py": {
+      "destination": "scripts/test-collie-account.py",
+      "keep_source": false,
+      "sha256": "03affb597f587d3048088961d39fc470b36efdda733d60524162a5fa3dd2f57a"
+    },
+    "scripts/test-collie-android-dependencies.flex": {
+      "destination": "scripts/test-collie-android-dependencies.flex",
+      "keep_source": false,
+      "sha256": "f68860170262bbb941a03d22d6726e5079856a68d7e1434bd6ace576c360b978"
+    },
+    "scripts/test-collie-android-internet.flex": {
+      "destination": "scripts/test-collie-android-internet.flex",
+      "keep_source": false,
+      "sha256": "9d8f1e6dba143b180463b11ff5c49186a3d18989382ac765fc041b4ee6e716e1"
+    },
+    "scripts/test-collie-android-packaging.flex": {
+      "destination": "scripts/test-collie-android-packaging.flex",
+      "keep_source": false,
+      "sha256": "2259179ecc07a0828dd24eab457c338a0b6f68fda26c719c7edd34fd993ab03e"
+    },
+    "scripts/test-collie-android-permissions.flex": {
+      "destination": "scripts/test-collie-android-permissions.flex",
+      "keep_source": false,
+      "sha256": "f3a72ec2f981f9cad6ec2c2a160c9b38159fb94ac17fc1cb357f43fe46a52a68"
+    },
+    "scripts/test-collie-android-test-programs.flex": {
+      "destination": "scripts/test-collie-android-test-programs.flex",
+      "keep_source": false,
+      "sha256": "c69f38f1e88a82d0db4afbcc9c9637f23f5df8eb824ea51fa9a5bd15258f232f"
+    },
+    "scripts/test-collie-android-views.flex": {
+      "destination": "scripts/test-collie-android-views.flex",
+      "keep_source": false,
+      "sha256": "5b5260b7ca765941b9425ee6fbcb00188df34d1daa9908c1def17faea483aca5"
+    },
+    "scripts/test-collie-android.flex": {
+      "destination": "scripts/test-collie-android.flex",
+      "keep_source": false,
+      "sha256": "be2d0b45097daaf230e1d954ff40c79d0d05f2c9c5796805af271bce17d3d832"
+    },
+    "scripts/test-collie-autoreview-android.flex": {
+      "destination": "scripts/test-collie-autoreview-android.flex",
+      "keep_source": false,
+      "sha256": "d3983f592d25c1df8e00cc039794edda1bb650203b88961521a98ac0a315b689"
+    },
+    "scripts/test-collie-autoreview-desktop.flex": {
+      "destination": "scripts/test-collie-autoreview-desktop.flex",
+      "keep_source": false,
+      "sha256": "866da429f9cb7ff9b63cd0de2f2af4655599fb5ea0a66e484d762b7beed6dd8e"
+    },
+    "scripts/test-collie-autoreview.flex": {
+      "destination": "scripts/test-collie-autoreview.flex",
+      "keep_source": false,
+      "sha256": "b5a0cab614d85502840790f00755937245b7d0492f01e3868cc30872300d9790"
+    },
+    "scripts/test-collie-aware-android.flex": {
+      "destination": "scripts/test-collie-aware-android.flex",
+      "keep_source": false,
+      "sha256": "aac9c98f68fb86aa4bad0e5e21dc7e3dc350d1fbbcfffd08b91657c47ae89053"
+    },
+    "scripts/test-collie-biometrics-android.flex": {
+      "destination": "scripts/test-collie-biometrics-android.flex",
+      "keep_source": false,
+      "sha256": "8686104e866c1181358e1cfa11bedd3f3c9440eab6e0fcab4ba050f193deda79"
+    },
+    "scripts/test-collie-ble-android.flex": {
+      "destination": "scripts/test-collie-ble-android.flex",
+      "keep_source": false,
+      "sha256": "2c29b5d06489373e5ac3048b1484c6f894f0bb7066d57ea9d9aafc7495f224b9"
+    },
+    "scripts/test-collie-ble-lifecycle-android.flex": {
+      "destination": "scripts/test-collie-ble-lifecycle-android.flex",
+      "keep_source": false,
+      "sha256": "ca7636fac43249fbb1b908ef3f3ab4f7ae021b6884c5a371a5c1d137b91a5f42"
+    },
+    "scripts/test-collie-ble-sets-android.flex": {
+      "destination": "scripts/test-collie-ble-sets-android.flex",
+      "keep_source": false,
+      "sha256": "1a7ff5581ece130539ec9e62e1d1d35e7557ecb8b8ed675426aa9c28ba58f50d"
+    },
+    "scripts/test-collie-bluetooth-android.flex": {
+      "destination": "scripts/test-collie-bluetooth-android.flex",
+      "keep_source": false,
+      "sha256": "3c05348a0fffe38afdc26625afb1793ef2a488a78399c3db8e36ad4435740fbc"
+    },
+    "scripts/test-collie-bluetooth-incoming-android.flex": {
+      "destination": "scripts/test-collie-bluetooth-incoming-android.flex",
+      "keep_source": false,
+      "sha256": "5cfc901cc79a55de52c3ddc994e540a3a632ff03d1c336f8c4ca363aeaeb639f"
+    },
+    "scripts/test-collie-bluetooth-peer-android.flex": {
+      "destination": "scripts/test-collie-bluetooth-peer-android.flex",
+      "keep_source": false,
+      "sha256": "682cfe39ef696f47fa2769913c09ccb23c254844ebccb84290ad0af12c4aba25"
+    },
+    "scripts/test-collie-camera-android.flex": {
+      "destination": "scripts/test-collie-camera-android.flex",
+      "keep_source": false,
+      "sha256": "dc7dbc14a01712fafdb9d776cb9f85a8b4456a993057edfd8cd2a2d2527f8bc2"
+    },
+    "scripts/test-collie-camera-manual-android.flex": {
+      "destination": "scripts/test-collie-camera-manual-android.flex",
+      "keep_source": false,
+      "sha256": "3f9cc66b37d9c011dfe2338ab2b00f9a7afc79e957715eaa694115057a2c821a"
+    },
+    "scripts/test-collie-card-handler.flex": {
+      "destination": "scripts/test-collie-card-handler.flex",
+      "keep_source": false,
+      "sha256": "24d006e4f115a9005e499c968cadcbf9d1ff538226958632ae2ad266068ab7bf"
+    },
+    "scripts/test-collie-cellular-android.flex": {
+      "destination": "scripts/test-collie-cellular-android.flex",
+      "keep_source": false,
+      "sha256": "b935f862bdccb3c55bd2f3d459796d0201a54d770a62150bc6cb8950bd56467b"
+    },
+    "scripts/test-collie-chat-switch.py": {
+      "destination": "scripts/test-collie-chat-switch.py",
+      "keep_source": false,
+      "sha256": "a3025a6efa3fca1fd20ee09c8a2709fbe45435eed5a70bdb45cefeb97051bf56"
+    },
+    "scripts/test-collie-core.flex": {
+      "destination": "scripts/test-collie-core.flex",
+      "keep_source": false,
+      "sha256": "699a13bdba119a8bda85cbc949119fbaef04675a5530c35fb95dd67c51b19e97"
+    },
+    "scripts/test-collie-desktop-launch.py": {
+      "destination": "scripts/test-collie-desktop-launch.py",
+      "keep_source": false,
+      "sha256": "80ccee199d90397c6f48caf355af4f8180a9b7318d2d2b6bcc90557468d8e4d8"
+    },
+    "scripts/test-collie-desktop-layout.py": {
+      "destination": "scripts/test-collie-desktop-layout.py",
+      "keep_source": false,
+      "sha256": "76d2bc7bfa66a428e3646d8033fe02988a691d4d1d5f456bae6f52de1246b99d"
+    },
+    "scripts/test-collie-desktop.py": {
+      "destination": "scripts/test-collie-desktop.py",
+      "keep_source": false,
+      "sha256": "d61e0b732ea6fb5d8f7e9164bdcd334834aa57ad59d8520f75caab5c2d0d89a1"
+    },
+    "scripts/test-collie-docking.py": {
+      "destination": "scripts/test-collie-docking.py",
+      "keep_source": false,
+      "sha256": "694a058b77a4ce58a4f5b40fdc8444f5ccff1e10b71d871a628571c7dbfac472"
+    },
+    "scripts/test-collie-document-provider-android.flex": {
+      "destination": "scripts/test-collie-document-provider-android.flex",
+      "keep_source": false,
+      "sha256": "a795d59632a0f7e8a80a6d8f2d7a5d66f8a4231b27aede564079f5d28b91041d"
+    },
+    "scripts/test-collie-documents-android.flex": {
+      "destination": "scripts/test-collie-documents-android.flex",
+      "keep_source": false,
+      "sha256": "3cd863be1844711ad47bdf18392ce23265e89d55dd38d7f49db6b645f2738dcd"
+    },
+    "scripts/test-collie-gatt-android.flex": {
+      "destination": "scripts/test-collie-gatt-android.flex",
+      "keep_source": false,
+      "sha256": "acd375348b96aa0da60d9c2fcfa5a6f5e898b819b57301e977c9cd149e938cb9"
+    },
+    "scripts/test-collie-gatt-server-android.flex": {
+      "destination": "scripts/test-collie-gatt-server-android.flex",
+      "keep_source": false,
+      "sha256": "3c956a6c7f78d24a83b012c32bcf312b8344b3457e6af248d9065979c47cc173"
+    },
+    "scripts/test-collie-haptics-android.flex": {
+      "destination": "scripts/test-collie-haptics-android.flex",
+      "keep_source": false,
+      "sha256": "6bc795320e9f14050450e2b5b33930cfd47a6074aa40ec2bc75cc633c4d454b3"
+    },
+    "scripts/test-collie-hardware-access-android.flex": {
+      "destination": "scripts/test-collie-hardware-access-android.flex",
+      "keep_source": false,
+      "sha256": "c8564415c7a2f65aab2d1b1c47ce2fde771afd8f0f203aa4f246009987630147"
+    },
+    "scripts/test-collie-hardware-android.flex": {
+      "destination": "scripts/test-collie-hardware-android.flex",
+      "keep_source": false,
+      "sha256": "ed46324b5f0b8b48a8b0ca1bd8f20327cc0188b0af0eb00390fb1e0338afdace"
+    },
+    "scripts/test-collie-hardware-reference.flex": {
+      "destination": "scripts/test-collie-hardware-reference.flex",
+      "keep_source": false,
+      "sha256": "eb8543d979308704da77ad2e1a7715b53daa9d23c115204d2de0a37fb7111bc8"
+    },
+    "scripts/test-collie-hce-android.flex": {
+      "destination": "scripts/test-collie-hce-android.flex",
+      "keep_source": false,
+      "sha256": "4867080407eaa87be433284dd4d4ec9c1f579f99cfd97b33a6af0770478540ae"
+    },
+    "scripts/test-collie-hid-android.flex": {
+      "destination": "scripts/test-collie-hid-android.flex",
+      "keep_source": false,
+      "sha256": "2140d3fc4897ab7086ba32a84fda3a3e234179190d4c76e09bebc492abf6ecce"
+    },
+    "scripts/test-collie-idle.py": {
+      "destination": "scripts/test-collie-idle.py",
+      "keep_source": false,
+      "sha256": "e08dbef478a50f9605d16312b6c7213dd807f107d8552d6eafcfa23a0efcc135"
+    },
+    "scripts/test-collie-imagegen.py": {
+      "destination": "scripts/test-collie-imagegen.py",
+      "keep_source": false,
+      "sha256": "03a3254b1114cab6bba7bb1dff431b5ecde268daf65dc886bc797eb7fccc304b"
+    },
+    "scripts/test-collie-input-android.flex": {
+      "destination": "scripts/test-collie-input-android.flex",
+      "keep_source": false,
+      "sha256": "9260fff07c193b5e96c2158e38f899c6a97680a87924ef82e4c9d06029411477"
+    },
+    "scripts/test-collie-lazy-permissions-android.flex": {
+      "destination": "scripts/test-collie-lazy-permissions-android.flex",
+      "keep_source": false,
+      "sha256": "5def09ad1b4d69f3e04ceae7d3c3ea899631a478d073b2038f6ceac231816750"
+    },
+    "scripts/test-collie-lazy-permissions.flex": {
+      "destination": "scripts/test-collie-lazy-permissions.flex",
+      "keep_source": false,
+      "sha256": "3af149cf58ce6267bd37e8ba3ab7eaa9e270daf183bd790124c96208ad20be9d"
+    },
+    "scripts/test-collie-login.py": {
+      "destination": "scripts/test-collie-login.py",
+      "keep_source": false,
+      "sha256": "91a7c9c278ebfb0f7156cfa6db1412382ab91af8576a20025537ca4f74509b88"
+    },
+    "scripts/test-collie-markdown-android.flex": {
+      "destination": "scripts/test-collie-markdown-android.flex",
+      "keep_source": false,
+      "sha256": "00e2032cd3b358f91fb8038d20f9e47e0af97f9febbaaefd63b57392cb606453"
+    },
+    "scripts/test-collie-multichat.py": {
+      "destination": "scripts/test-collie-multichat.py",
+      "keep_source": false,
+      "sha256": "245d036951b66575a8d15da93fb467c6cf3f43a60093ea25d2aac585e9d06da7"
+    },
+    "scripts/test-collie-native-platform.py": {
+      "destination": "scripts/test-collie-native-platform.py",
+      "keep_source": false,
+      "sha256": "b8065b87e0afe4f289a8438ecfae34156dd7786b2d89156fa8eee96c8a477d5d"
+    },
+    "scripts/test-collie-native.py": {
+      "destination": "scripts/test-collie-native.py",
+      "keep_source": false,
+      "sha256": "b2a6f8d5b9183b5724d98fd61b838e6d1f9e902bd17b88d75c14af7bfcbe14df"
+    },
+    "scripts/test-collie-nfc-android.flex": {
+      "destination": "scripts/test-collie-nfc-android.flex",
+      "keep_source": false,
+      "sha256": "7e762082549299ef220f0f95cf91e55cd0e338686bc58f93095888bf4029cda6"
+    },
+    "scripts/test-collie-no-python.py": {
+      "destination": "scripts/test-collie-no-python.py",
+      "keep_source": false,
+      "sha256": "6000dd43f6fe173686bbb092b53d08c714dd528a0d7657b8f2d8d03b9d45c1a5"
+    },
+    "scripts/test-collie-p2p-android.flex": {
+      "destination": "scripts/test-collie-p2p-android.flex",
+      "keep_source": false,
+      "sha256": "d4f008bbe55709b3873dfda41052bf3fb875c5e4b7abd25521ce3731c6b31cc5"
+    },
+    "scripts/test-collie-projects.py": {
+      "destination": "scripts/test-collie-projects.py",
+      "keep_source": false,
+      "sha256": "470138ccdb594372989ccc14f085f433ed6b0115da87c868cb54a86fb2d7acbb"
+    },
+    "scripts/test-collie-recall-android.flex": {
+      "destination": "scripts/test-collie-recall-android.flex",
+      "keep_source": false,
+      "sha256": "1adc0760ab066af362a5cd680fb1fd5a50c4faa73df4f3113ac48b7c989bc319"
+    },
+    "scripts/test-collie-recall.flex": {
+      "destination": "scripts/test-collie-recall.flex",
+      "keep_source": false,
+      "sha256": "498fa1222f27976f39e70f5967a9b4f95f15dd256dedcaa689205f8fc0c42716"
+    },
+    "scripts/test-collie-revocation-android.flex": {
+      "destination": "scripts/test-collie-revocation-android.flex",
+      "keep_source": false,
+      "sha256": "d232255780f7ec0be0fd01ffe8832966c34b6bc873640af677cc4a8eda77c40e"
+    },
+    "scripts/test-collie-screen-android.flex": {
+      "destination": "scripts/test-collie-screen-android.flex",
+      "keep_source": false,
+      "sha256": "83c4c106362046b2e20a80a03550bc895ece91df0f6182f863eedbcd3ad5002f"
+    },
+    "scripts/test-collie-scrolling.py": {
+      "destination": "scripts/test-collie-scrolling.py",
+      "keep_source": false,
+      "sha256": "a6c6254dea76cb89d38ded78927ad8d47c243aa2a46ff33095b4989ce899f84e"
+    },
+    "scripts/test-collie-sensors-android.flex": {
+      "destination": "scripts/test-collie-sensors-android.flex",
+      "keep_source": false,
+      "sha256": "0242c1e7da36010ea7116db75d7d22c4dbee7702d1059b9dba91ef34c7b89d0e"
+    },
+    "scripts/test-collie-sidebar.py": {
+      "destination": "scripts/test-collie-sidebar.py",
+      "keep_source": false,
+      "sha256": "a6f1be703a7579039ae177efc827c9c06ae6cf4ba6129e332c2ff15a10102b86"
+    },
+    "scripts/test-collie-signals-android.flex": {
+      "destination": "scripts/test-collie-signals-android.flex",
+      "keep_source": false,
+      "sha256": "a6a7569c38bd609986070e8b45002b99b95136f1f07c0b71023065aa10bef219"
+    },
+    "scripts/test-collie-signals.flex": {
+      "destination": "scripts/test-collie-signals.flex",
+      "keep_source": false,
+      "sha256": "c7200b100a856558bed7936f02347174330bb8e2a78d35bbb1388bea1759073d"
+    },
+    "scripts/test-collie-thinking-android.flex": {
+      "destination": "scripts/test-collie-thinking-android.flex",
+      "keep_source": false,
+      "sha256": "cb489188df8d17255dd85951c331a58cc8093a22a9b80ad4112a27cc3c20af28"
+    },
+    "scripts/test-collie-thinking.flex": {
+      "destination": "scripts/test-collie-thinking.flex",
+      "keep_source": false,
+      "sha256": "52fbc2e8a839fa3f2b683b0f5955859ea2de7590af72cc15cf9699f40d6df6d4"
+    },
+    "scripts/test-collie-ui-android.flex": {
+      "destination": "scripts/test-collie-ui-android.flex",
+      "keep_source": false,
+      "sha256": "6935bb09a0eab61d711b5b79cecd66c77ebd4be7cd8f381d3536348d90c5c616"
+    },
+    "scripts/test-collie-ui.flex": {
+      "destination": "scripts/test-collie-ui.flex",
+      "keep_source": false,
+      "sha256": "ab79facc60afb975e4576960560c5bd9d25aa7a5c8b84e8fd4b26034589b843f"
+    },
+    "scripts/test-collie-usb-iso-android.flex": {
+      "destination": "scripts/test-collie-usb-iso-android.flex",
+      "keep_source": false,
+      "sha256": "051b6eac607e2dec085bd38251493aea4418fca9d3ffffb5b553410aa571c411"
+    },
+    "scripts/test-collie-usb-serial-android.flex": {
+      "destination": "scripts/test-collie-usb-serial-android.flex",
+      "keep_source": false,
+      "sha256": "e057013c0c231a6d12d1f0149e01542258c22a3b2cefc1c768871bf5f9a2399e"
+    },
+    "scripts/test-collie-uwb-android.flex": {
+      "destination": "scripts/test-collie-uwb-android.flex",
+      "keep_source": false,
+      "sha256": "e551a6a3831312dc1b89730bcb3e9a78d52bc6ce008046d363201953628e4a2c"
+    },
+    "scripts/test-collie-uwb-gms-android.flex": {
+      "destination": "scripts/test-collie-uwb-gms-android.flex",
+      "keep_source": false,
+      "sha256": "797e3a51fde7521f927aa921871c426bc88252ecad63debc60c8fe09dd0c4ce7"
+    },
+    "scripts/test-collie-uwb-peer-android.flex": {
+      "destination": "scripts/test-collie-uwb-peer-android.flex",
+      "keep_source": false,
+      "sha256": "6aa4d11e10692d867de5dc1e0491476823a2749cff12507326cc9159fef5b845"
+    },
+    "scripts/test-collie-vpn-android.flex": {
+      "destination": "scripts/test-collie-vpn-android.flex",
+      "keep_source": false,
+      "sha256": "32e1e657bd20e0dd8d30a8275df94852865752fb6726ed213e888b95cf200e3a"
+    },
+    "scripts/test-collie-wifi-android.flex": {
+      "destination": "scripts/test-collie-wifi-android.flex",
+      "keep_source": false,
+      "sha256": "f978fe071f9df02e84c54339dccf2278999f6b8690fe3a74c7536606cec9ece4"
+    },
+    "scripts/test-collie-workers-android.flex": {
+      "destination": "scripts/test-collie-workers-android.flex",
+      "keep_source": false,
+      "sha256": "4b37f6669042d6887697d9335e43e0559d97dd33c5f0fe2effebf4d3d439bae6"
+    },
+    "scripts/test-collie-workers-live.flex": {
+      "destination": "scripts/test-collie-workers-live.flex",
+      "keep_source": false,
+      "sha256": "7a8b07ff691cc0e0ef724a462abcd2280728b3ec294ab410266dd4734ba3fa9a"
+    },
+    "scripts/test-collie-workers.flex": {
+      "destination": "scripts/test-collie-workers.flex",
+      "keep_source": false,
+      "sha256": "e29a05af8f129109eb3d47d0c505f33994d4d77ec8c26db8f1c64cb8ccdcc95a"
+    },
+    "scripts/test-collie-workspace-android.flex": {
+      "destination": "scripts/test-collie-workspace-android.flex",
+      "keep_source": false,
+      "sha256": "907a2470d421e705c1ac3775cc9dc8ade4b8007a42d442263a4157313828c790"
+    },
+    "scripts/test-collie-workspace-desktop.flex": {
+      "destination": "scripts/test-collie-workspace-desktop.flex",
+      "keep_source": false,
+      "sha256": "69c64aa6f4e6ca60522357de0e0a2383861abdf0c1b54cb2aa243e78fe698d7b"
+    },
+    "scripts/test-collie-workspace-mode.flex": {
+      "destination": "scripts/test-collie-workspace-mode.flex",
+      "keep_source": false,
+      "sha256": "7e5cd3d5cb81a24f91428d364ade88fed42865bacf4322c780fd14a9093ac471"
+    },
+    "scripts/test-collie-workspace.py": {
+      "destination": "scripts/test-collie-workspace.py",
+      "keep_source": false,
+      "sha256": "d72b6f1a2fa1346eee3c406f1937f960615143e31576b6dcf3e00030d8070d4e"
+    },
+    "scripts/test-collie.flex": {
+      "destination": "scripts/test-collie.flex",
+      "keep_source": false,
+      "sha256": "c89d22efdd9e8249fbe8ab18db195ee006fbdaaa1fffd580f3825dc707e1052d"
+    },
+    "scripts/test-presentation-pair.py": {
+      "destination": "scripts/test-presentation-pair.py",
+      "keep_source": false,
+      "sha256": "da06e45816588383614f31c2bd3388c27aabbb6f5121a1f98b59888deda14c17"
+    },
+    "scripts/test-ui-desktop.flex": {
+      "destination": "scripts/test-ui-desktop.flex",
+      "keep_source": true,
+      "sha256": "e02eeba75b9b8ebd7e5ffbb295b219cf4b8ec9adcef8492ed353de6e5750cffe"
+    },
+    "scripts/test-ui.flex": {
+      "destination": "scripts/test-ui.flex",
+      "keep_source": true,
+      "sha256": "ee62979ce8e9f578aaf32ecaa6070c5cb99066209019e1374575859ef36c016b"
+    },
+    "scripts/test-wayland-ime-session.py": {
+      "destination": "scripts/test-wayland-ime-session.py",
+      "keep_source": false,
+      "sha256": "ed44ecac280c6da95685b32c1d5a564349f5aba97205044641996b3c558f58b5"
+    },
+    "scripts/test-wayland-ime.py": {
+      "destination": "scripts/test-wayland-ime.py",
+      "keep_source": false,
+      "sha256": "dd8cb034f93d60cfc9c4d9617b6aeb0e6e58b393c6c696f06797799b79ebc901"
+    },
+    "scripts/test-wayland-ui.py": {
+      "destination": "scripts/test-wayland-ui.py",
+      "keep_source": false,
+      "sha256": "862ec04521197eba93a6192e196955598ed1b8f564b489e7b336d18e8e4a80d9"
+    },
+    "scripts/test-wayland-wait.py": {
+      "destination": "scripts/test-wayland-wait.py",
+      "keep_source": false,
+      "sha256": "745cf65d147014d0f685ff4b13112b78c0e27faa882b80af86c29341f16b1822"
+    },
+    "tests/collie/login-server.flex": {
+      "destination": "tests/collie/login-server.flex",
+      "keep_source": false,
+      "sha256": "3a8681982b93b71d41cdf78863c8411276be926ce5a9a4414c85289607b54d91"
+    },
+    "tests/collie/login-server.py": {
+      "destination": "tests/collie/login-server.py",
+      "keep_source": false,
+      "sha256": "8c5e2d0749a6770c32bc9390da85cd177c8fd6ddf56ad5ffd8029c350e5c77b4"
+    },
+    "tests/collie/native-host.flex": {
+      "destination": "tests/collie/native-host.flex",
+      "keep_source": false,
+      "sha256": "a641ea961d6468135aa4855969a29272579f6b9e171553b9238e29820c6465bc"
+    },
+    "tests/collie/reference_host/README.md": {
+      "destination": "tests/collie/reference_host/README.md",
+      "keep_source": false,
+      "sha256": "ebc4e4f87b2d228b85c2aa95121f85094b8762b59ef9507386b7ac9cca50632f"
+    },
+    "tests/collie/reference_host/account.py": {
+      "destination": "tests/collie/reference_host/account.py",
+      "keep_source": false,
+      "sha256": "5f7d3322e9e6049075168840b436041fae88105bc9f79fb3cb1435fea1165d68"
+    },
+    "tests/collie/reference_host/accounts.py": {
+      "destination": "tests/collie/reference_host/accounts.py",
+      "keep_source": false,
+      "sha256": "66f20fb7c13d8e2c05846b73f6f5d889b65309af389d88dd88a06babe68262d9"
+    },
+    "tests/collie/reference_host/engine.py": {
+      "destination": "tests/collie/reference_host/engine.py",
+      "keep_source": false,
+      "sha256": "4192a2e83f20ab1d1069d1c8792ac2266594210ccab843890d5f06942ce4b31f"
+    },
+    "tests/collie/reference_host/imagegen.py": {
+      "destination": "tests/collie/reference_host/imagegen.py",
+      "keep_source": false,
+      "sha256": "15e5c47d7f1523b76c2cb4e2af3ad232218616f2588056dc1ab42e6751e81f0a"
+    },
+    "tests/collie/reference_host/launch.py": {
+      "destination": "tests/collie/reference_host/launch.py",
+      "keep_source": false,
+      "sha256": "671240b130ad9df2309f3429ab5083b2300d2832a31dfdf5259a345fbd1f60d7"
+    },
+    "tests/collie/reference_host/linux_platform.py": {
+      "destination": "tests/collie/reference_host/linux_platform.py",
+      "keep_source": false,
+      "sha256": "f6cb6ec86d32442662e64d14ceb988bf4cb783cdfb6f81d68a640d07e112fa88"
+    },
+    "tests/collie/reference_host/login.py": {
+      "destination": "tests/collie/reference_host/login.py",
+      "keep_source": false,
+      "sha256": "9bf9598d55902cc29b034af67e93ffce71261504dcf84bac61ca7b19dda27b84"
+    },
+    "tests/collie/reference_host/projects.py": {
+      "destination": "tests/collie/reference_host/projects.py",
+      "keep_source": false,
+      "sha256": "6a075e9ee456518a1c426b50fc3a79d62d1a9d913ae440904a6184d44d134867"
+    },
+    "tests/collie/reference_host/service.py": {
+      "destination": "tests/collie/reference_host/service.py",
+      "keep_source": false,
+      "sha256": "2385f4ef665779084c3a08af59a4b421f8601ae0cf694bcda19c08e25971b215"
+    },
+    "tests/collie/responses-live.flex": {
+      "destination": "tests/collie/responses-live.flex",
+      "keep_source": false,
+      "sha256": "a3b03a6476954164681e2d223a0a9e48560e98ef2375f7490f36b192719083e7"
+    },
+    "tests/tooling/collie-thinking-events.json": {
+      "destination": "tests/tooling/collie-thinking-events.json",
+      "keep_source": false,
+      "sha256": "c5520ff1f3c600222d79341b2ffdb227e6bf4d9c513c8f259ac8471236d43bc8"
+    },
+    "tests/tooling/collie-ui-fixtures.json": {
+      "destination": "tests/tooling/collie-ui-fixtures.json",
+      "keep_source": false,
+      "sha256": "55f37e0c20615a85e70e3a83716404cf00e3bfe3aa4bef4e7a3776c9b8534c56"
+    },
+    "tests/tooling/collie-view.png": {
+      "destination": "tests/tooling/collie-view.png",
+      "keep_source": false,
+      "sha256": "2919502de4800e427d4a2daf500dbbbcbe31140440d857f1f544fc18f0764757"
+    },
+    "tests/ui/backend-performance.flex": {
+      "destination": "tests/ui/backend-performance.flex",
+      "keep_source": false,
+      "sha256": "38428316440ecb336b0507b52892116e8060ad5e794cd7f25516dc07013dd0b3"
+    },
+    "tests/ui/browser.flex": {
+      "destination": "tests/ui/browser.flex",
+      "keep_source": true,
+      "sha256": "521d53b901c84207f4d932a58a525a43112a665e5fd945821723eb6f37d0c6de"
+    },
+    "tests/ui/chat-command-queue.flex": {
+      "destination": "tests/ui/chat-command-queue.flex",
+      "keep_source": false,
+      "sha256": "e763e47e75c2cda626df75c09d2c76fad75e0b994000f847fe8de586c1f9d110"
+    },
+    "tests/ui/desktop.flex": {
+      "destination": "tests/ui/desktop.flex",
+      "keep_source": true,
+      "sha256": "c8fa3a77b3e8b6d7366af5dfb67a9e7012a5e3145d25f9662778e191eef4c2e8"
+    },
+    "tests/ui/permissions.flex": {
+      "destination": "tests/ui/permissions.flex",
+      "keep_source": false,
+      "sha256": "a3c39817080a3863f4d19066bed2bd57ec9421fc92d9bebd4f3bc89e449b915f"
+    },
+    "tests/ui/wait-sources.flex": {
+      "destination": "tests/ui/wait-sources.flex",
+      "keep_source": false,
+      "sha256": "c9ce7434cd4d9e65cabf077ff15e3c7cf5c7c026a217d541185587727bd6e204"
+    },
+    "scripts/test-typing-protocol.py": {
+      "destination": "scripts/test-typing-protocol.py",
+      "keep_source": false,
+      "sha256": "623ba3aae8153371a3c756d11e98b35baa9f521f72c64097bbc3f69b1349551a"
+    }
+  }
+}

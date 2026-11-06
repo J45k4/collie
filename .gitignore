@@ -1,0 +1,7 @@
+/.flexscript
+/build/
+__pycache__/
+*.pyc
+auth.json
+.env
+/collie-trace.json

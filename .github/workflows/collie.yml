@@ -1,0 +1,184 @@
+name: Collie
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    env:
+      FLEXSCRIPT_LIB: ${{ github.workspace }}/.flexscript/libs
+      COLLIE_HEADLESS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read SDK pin
+        id: sdk
+        run: echo "revision=$(cat flexscript.lock)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: J45k4/flexscript
+          ref: ${{ steps.sdk.outputs.revision }}
+          path: sdk-source
+      - name: Install native test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes build-essential clang lld curl unzip bubblewrap util-linux libssl-dev libsdl2-dev libsdl2-ttf-dev libsqlite3-0 libzstd1 libpng-dev libjpeg-dev libwebp-dev librsvg2-dev xvfb xauth python3 python3-pil qemu-user libglib2.0-0t64 libxtst6 libgl1-mesa-dri libglx-mesa0 libegl1 pkg-config fontconfig libfontconfig1-dev libfreetype-dev libharfbuzz-dev libxkbcommon-dev libwayland-dev libwayland-bin fonts-noto-color-emoji fonts-noto-core fonts-noto-cjk
+          if [ -f /sys/module/apparmor/parameters/enabled ] && grep -q Y /sys/module/apparmor/parameters/enabled; then
+            for profile in /etc/apparmor.d/bwrap /etc/apparmor.d/bwrap-userns-restrict; do
+              if [ -f "$profile" ]; then sudo apparmor_parser --remove "$profile"; fi
+            done
+            sudo tee /etc/apparmor.d/collie-bwrap >/dev/null <<'PROFILE'
+          abi <abi/4.0>,
+          include <tunables/global>
+          profile collie-bwrap /usr/bin/bwrap flags=(unconfined) {
+            userns,
+          }
+          PROFILE
+            sudo apparmor_parser --replace /etc/apparmor.d/collie-bwrap
+          fi
+      - name: Bootstrap compiler and application tools
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build/seed
+          gh release download 0.0.5 --repo J45k4/flexscript --dir build/seed --pattern flexscript-0.0.5-linux-x86_64 --pattern flexscript-core-0.0.5-linux-x86_64 --pattern SHA256SUMS
+          (cd build/seed && sha256sum --check SHA256SUMS)
+          chmod +x build/seed/flexscript-0.0.5-linux-x86_64
+          ./configure --sdk sdk-source
+          FLEXSCRIPT_COMPILER="$PWD/build/seed/flexscript-0.0.5-linux-x86_64" ./build.sh tools
+
+      - name: Test Collie conversations and restricted VM execution
+        run: |
+          build/tools/test-collie --compiler build/compiler --vm
+          python3 tests/tui.py --compiler build/compiler --vm
+
+      - name: Verify Android worker broker and VM continuation checkpoints under ARM64 QEMU
+        run: |
+          build/compiler tests/hardware-core.flex -o build/test-collie-hardware-core
+          build/test-collie-hardware-core
+          build/compiler scripts/fixtures/collie-rfcomm-probe.flex -o build/test-collie-rfcomm-probe
+          build/test-collie-rfcomm-probe --self-test
+          build/compiler scripts/test-collie-bluetooth-incoming-android.flex -o build/test-collie-bluetooth-incoming
+          build/test-collie-bluetooth-incoming --self-test
+          build/compiler tests/nfc.flex -o build/test-collie-nfc
+          build/test-collie-nfc
+          build/compiler run --interpret --fuel=10000000 tests/nfc.flex
+          build/compiler tests/sensor-direct.flex -o build/test-collie-sensor-direct
+          build/test-collie-sensor-direct
+          build/compiler run --interpret --fuel=10000000 tests/sensor-direct.flex
+          build/compiler run --jit --fuel=10000000 tests/sensor-direct.flex
+          build/compiler tests/usb-iso.flex -o build/test-collie-usb-iso
+          build/test-collie-usb-iso
+          build/compiler run --interpret --fuel=10000000 tests/usb-iso.flex
+          build/compiler run --jit --fuel=10000000 tests/usb-iso.flex
+          clang -std=c11 -Wall -Wextra -Werror -O2 -pthread tests/android/usb-iso-native-test.c -o build/test-collie-usb-iso-native
+          build/test-collie-usb-iso-native
+          build/compiler scripts/test-collie-usb-iso-android.flex -o build/test-collie-usb-iso-android-driver
+          build/compiler tests/uwb.flex -o build/test-collie-uwb
+          build/test-collie-uwb
+          build/compiler run --interpret --fuel=10000000 tests/uwb.flex
+          build/compiler tests/camera.flex -o build/test-collie-camera-records
+          build/test-collie-camera-records
+          build/compiler run --interpret --fuel=10000000 tests/camera.flex
+          build/compiler tests/haptics.flex -o build/test-collie-haptic-records
+          build/test-collie-haptic-records
+          build/compiler run --interpret --fuel=10000000 tests/haptics.flex
+          build/compiler scripts/test-collie-haptics-android.flex -o build/test-collie-haptics-android-driver
+          build/compiler scripts/build-collie-document-provider.flex -o build/build-collie-document-provider
+          build/compiler scripts/test-collie-document-provider-android.flex -o build/test-collie-document-provider-android-driver
+          build/test-collie-document-provider-android-driver --self-test
+          build/compiler scripts/test-collie-sensors-android.flex -o build/test-collie-sensors-android-driver
+          build/test-collie-sensors-android-driver --self-test
+          build/compiler scripts/check-collie-hid-platform.flex -o build/check-collie-hid-platform
+          build/compiler tests/hid-lifecycle.flex -o build/check-collie-hid-lifecycle
+          python3 -m py_compile scripts/fixtures/collie-*.py
+          build/tools/test-collie-hid-android --self-test
+          javac --release 8 -d build/android-permission-probe-check tests/android-permission-probe/PermissionState.java
+          build/compiler tests/usb-serial.flex -o build/test-collie-usb-serial
+          build/test-collie-usb-serial
+          build/compiler run --interpret tests/usb-serial.flex
+          build/compiler run --jit tests/usb-serial.flex
+          build/compiler scripts/build-collie-serial-fixture.flex -o build/build-collie-serial-fixture
+          build/compiler scripts/test-collie-usb-serial-android.flex -o build/test-collie-usb-serial-android-driver
+          build/test-collie-usb-serial-android-driver --self-test
+          build/compiler tests/usb-serial-live.flex -o build/test-collie-usb-serial-live-template
+          build/test-collie-usb-serial-live-template
+          clang -std=c11 -Wall -Wextra -Werror -O2 -c tests/android/serial-gadget-loopback.c -o build/test-collie-serial-fixture.o
+          build/compiler tests/guest-copy.flex -o build/test-collie-guest-copy
+          build/test-collie-guest-copy
+          build/tools/test-collie-nfc-android --self-test
+          build/compiler run --interpret --fuel=50000000 tests/guest-copy.flex
+          build/compiler .flexscript/scripts/test-host-zip.flex -o build/test-host-zip
+          build/test-host-zip
+          build/compiler scripts/test-collie-android-dependencies.flex -o build/test-collie-android-dependencies
+          build/test-collie-android-dependencies
+          build/compiler scripts/build-collie-android.flex -o build/build-collie-android
+          build/build-collie-android --compiler build/compiler --native-only --out build/android-worker-tests
+          build/tools/test-collie-android --out build/android-worker-tests
+          build/tools/test-collie-android-test-programs --out build/android-worker-tests
+          build/compiler scripts/test-collie-workers.flex -o build/test-collie-workers
+          build/test-collie-workers --out build/android-worker-tests
+          build/compiler scripts/test-collie-signals.flex -o build/test-collie-signals
+          build/test-collie-signals --out build/android-worker-tests
+          build/compiler scripts/test-collie-hardware-reference.flex -o build/test-collie-hardware-reference
+          build/test-collie-hardware-reference --out build/android-worker-tests
+          build/compiler scripts/test-collie-card-handler.flex -o build/test-collie-card-handler
+          build/test-collie-card-handler --out build/android-worker-tests
+          build/compiler scripts/test-collie-lazy-permissions.flex -o build/test-collie-lazy-permissions
+          build/test-collie-lazy-permissions --out build/android-worker-tests
+          build/compiler scripts/test-collie-recall.flex -o build/test-collie-recall
+          build/test-collie-recall --out build/android-worker-tests
+          build/compiler scripts/test-collie-thinking.flex -o build/test-collie-thinking
+          build/test-collie-thinking --out build/android-worker-tests
+          build/compiler scripts/test-collie-autoreview.flex -o build/test-collie-autoreview
+          build/test-collie-autoreview --out build/android-worker-tests
+          build/compiler scripts/test-collie-workspace-mode.flex -o build/test-collie-workspace-mode
+          build/test-collie-workspace-mode --out build/android-worker-tests
+          build/compiler scripts/test-collie-core.flex -o build/test-collie-core
+          build/test-collie-core --out build/android-worker-tests
+          build/compiler tests/shared-core.flex -o build/test-collie-shared-core
+          build/test-collie-core --out build/android-worker-tests --core-driver build/test-collie-shared-core
+          build/test-collie-autoreview --out build/android-worker-tests --core-driver build/test-collie-shared-core
+          build/test-collie-workspace-mode --out build/android-worker-tests --core-driver build/test-collie-shared-core
+
+      - name: Test portable UI AST, ARM64 patches and real DOM adapter
+        run: |
+          build/tools/test-ui --compiler build/compiler --out build/android-worker-tests
+          build/tools/test-collie-ui --compiler build/compiler --out build/android-worker-tests
+          xvfb-run -a build/tools/test-ui-desktop --compiler build/compiler --x11
+          build/compiler examples/ui/collie-permissions.flex -o build/ui-permissions-web
+          build/compiler .flexscript/examples/ui/counter.flex -o build/ui-counter
+          build/compiler tests/ui/browser.flex -o build/test-ui-browser
+          build/test-ui-browser build/ui-permissions-web google-chrome build/ui-counter
+
+      - name: Test native Collie desktop and shared Android core integration
+        run: |
+          build/compiler desktop/build.flex -o build/build-collie-desktop
+          build/build-collie-desktop --compiler build/compiler
+          build/test-collie-core --desktop --out build/collie-desktop
+          build/test-collie-thinking --desktop --out build/collie-desktop
+          build/test-collie-autoreview --desktop --out build/collie-desktop
+          build/compiler scripts/test-collie-autoreview-desktop.flex -o build/test-collie-autoreview-desktop
+          build/test-collie-autoreview-desktop build/collie-desktop
+          build/test-collie-workspace-mode --desktop --out build/collie-desktop
+          build/compiler scripts/test-collie-workspace-desktop.flex -o build/test-collie-workspace-desktop
+          build/test-collie-workspace-desktop build/collie-desktop
+          python3 scripts/test-collie-native.py --out build/collie-desktop --compiler build/compiler
+          python3 scripts/test-collie-native-platform.py --out build/collie-desktop --compiler build/compiler
+          python3 scripts/test-collie-desktop-layout.py --out build/collie-desktop
+          python3 scripts/test-collie-imagegen.py --out build/collie-desktop
+          python3 scripts/test-collie-no-python.py --out build/collie-desktop --compiler build/compiler
+
+
+      - name: Test application wait sources and chat command queue
+        run: |
+          build/compiler tests/ui/wait-sources.flex -o build/test-wait-sources
+          SDL_VIDEODRIVER=dummy build/test-wait-sources
+          build/compiler --native-pipeline direct tests/ui/wait-sources.flex -o build/test-wait-sources-direct
+          SDL_VIDEODRIVER=dummy build/test-wait-sources-direct
+          build/compiler tests/ui/chat-command-queue.flex -o build/test-chat-command-queue
+          build/test-chat-command-queue
+          build/compiler --native-pipeline direct tests/ui/chat-command-queue.flex -o build/test-chat-command-queue-direct
+          build/test-chat-command-queue-direct
